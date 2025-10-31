@@ -2,7 +2,7 @@
 #include <exception>
 #include <spdlog/spdlog.h>
 
-#include "cli/interface.hpp"
+#include "cli/cli.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
     try
     {
-        CLIInterface cli;
+        CLI cli;
         return cli.run(argc, argv);
     }
     catch (const std::exception &e)

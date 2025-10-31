@@ -27,11 +27,11 @@ struct GameSpec
  * Command-line interface for Connect X
  * Handles user input/output and game display
  */
-class CLIInterface
+class CLI
 {
 public:
-    CLIInterface();
-    ~CLIInterface();
+    CLI();
+    ~CLI();
 
     /**
      * Run the CLI application

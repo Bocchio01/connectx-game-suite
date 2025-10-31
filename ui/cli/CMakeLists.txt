@@ -5,7 +5,7 @@ add_executable(connectx_cli
     src/visual.cpp
     src/output.cpp
     src/input.cpp
-    src/interface.cpp
+    src/cli.cpp
     app/main.cpp
 )
 

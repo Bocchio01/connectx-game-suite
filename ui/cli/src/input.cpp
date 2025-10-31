@@ -6,9 +6,9 @@
 #include <limits>
 #include <map>
 
-#include "cli/interface.hpp"
+#include "cli/cli.hpp"
 
-void CLIInterface::parseArguments(int argc, char *argv[])
+void CLI::parseArguments(int argc, char *argv[])
 {
     for (int i = 1; i < argc; ++i)
     {
@@ -72,7 +72,7 @@ void CLIInterface::parseArguments(int argc, char *argv[])
     }
 }
 
-bool CLIInterface::parseGameSpec(const std::string &spec)
+bool CLI::parseGameSpec(const std::string &spec)
 {
     // Format: GameName<rows cols num_players connect_length>
     // Example: MyGame<8 10 3 5>

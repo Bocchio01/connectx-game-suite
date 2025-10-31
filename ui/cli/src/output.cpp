@@ -8,7 +8,7 @@
 
 #include "protocol/protocol.hpp"
 
-#include "cli/interface.hpp"
+#include "cli/cli.hpp"
 #include "cli/visual.hpp"
 
 #ifdef _WIN32
@@ -24,7 +24,7 @@
 #define CLEAR_COMMAND "clear"
 #endif
 
-void CLIInterface::printBanner()
+void CLI::printBanner()
 {
     system(CLEAR_COMMAND);
     std::cout << std::string(33, '*') << std::endl;
@@ -34,7 +34,7 @@ void CLIInterface::printBanner()
     std::cout << std::endl;
 }
 
-void CLIInterface::printHelp()
+void CLI::printHelp()
 {
     std::cout << "Connect X CLI Client" << std::endl
               << std::endl;
@@ -65,7 +65,7 @@ void CLIInterface::printHelp()
     // std::cout << "  connectx-cli --ai" << std::endl;
 }
 
-void CLIInterface::printLobby(const GameStateUpdate &state)
+void CLI::printLobby(const GameStateUpdate &state)
 {
     system(CLEAR_COMMAND);
     std::cout << "Game is starting soon..." << std::endl;
@@ -83,7 +83,7 @@ void CLIInterface::printLobby(const GameStateUpdate &state)
     }
 }
 
-void CLIInterface::printBoard(const GameStateUpdate &state)
+void CLI::printBoard(const GameStateUpdate &state)
 {
     std::optional<GameInfo> const gameInfo = client_.getGameInfo();
     if (gameInfo.has_value())
@@ -134,7 +134,7 @@ void CLIInterface::printBoard(const GameStateUpdate &state)
               << std::endl;
 }
 
-void CLIInterface::printGameList(const std::vector<GameInfo> &games)
+void CLI::printGameList(const std::vector<GameInfo> &games)
 {
     if (games.empty())
     {
@@ -197,7 +197,7 @@ void CLIInterface::printGameList(const std::vector<GameInfo> &games)
     std::cout << std::string(55, '=') << "\n";
 }
 
-std::string CLIInterface::printPlayer(uint8_t player_id, const std::string &player_name, bool highlight)
+std::string CLI::printPlayer(uint8_t player_id, const std::string &player_name, bool highlight)
 {
     PlayerVisual visual = PLAYER_VISUALS.at(player_id);
     std::string symbol(1, static_cast<char>(visual.symbol));
@@ -217,7 +217,7 @@ std::string CLIInterface::printPlayer(uint8_t player_id, const std::string &play
     }
 }
 
-std::string CLIInterface::colorize(const std::string &text, int color_code)
+std::string CLI::colorize(const std::string &text, int color_code)
 {
     std::ostringstream oss;
     oss << "\033[" << color_code << "m" << text << "\033[0m";

@@ -6,7 +6,7 @@
 #include <limits>
 #include <map>
 
-#include "cli/interface.hpp"
+#include "cli/cli.hpp"
 
 #ifdef _WIN32
 #ifndef NOMINMAX
@@ -43,7 +43,7 @@
 //     }
 // }
 
-CLIInterface::CLIInterface()
+CLI::CLI()
     : waiting_for_input_(false),
       server_host_("localhost"),
       server_port_(8080),
@@ -53,7 +53,7 @@ CLIInterface::CLIInterface()
 {
 }
 
-CLIInterface::~CLIInterface()
+CLI::~CLI()
 {
     if (event_thread_.joinable())
     {
@@ -61,7 +61,7 @@ CLIInterface::~CLIInterface()
     }
 }
 
-int CLIInterface::run(int argc, char *argv[])
+int CLI::run(int argc, char *argv[])
 {
     // Parse command line arguments
     parseArguments(argc, argv);
@@ -132,7 +132,7 @@ int CLIInterface::run(int argc, char *argv[])
     return 0;
 }
 
-void CLIInterface::handleJoinMode()
+void CLI::handleJoinMode()
 {
     switch (join_mode_)
     {
@@ -163,7 +163,7 @@ void CLIInterface::handleJoinMode()
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 }
 
-void CLIInterface::joinGame()
+void CLI::joinGame()
 {
     std::cout << "Auto-joining first available game..." << std::endl;
 
@@ -176,7 +176,7 @@ void CLIInterface::joinGame()
     }
 }
 
-void CLIInterface::joinGame(uint32_t game_id)
+void CLI::joinGame(uint32_t game_id)
 {
     std::cout << "Joining game ID(" + std::to_string(game_id) + ") ..." << std::endl;
 
@@ -189,7 +189,7 @@ void CLIInterface::joinGame(uint32_t game_id)
     }
 }
 
-void CLIInterface::joinGame(const std::string &name)
+void CLI::joinGame(const std::string &name)
 {
     std::cout << "Looking for game '" + name + "'..." << std::endl;
 
@@ -229,7 +229,7 @@ void CLIInterface::joinGame(const std::string &name)
     }
 }
 
-void CLIInterface::createCustomGame()
+void CLI::createCustomGame()
 {
     if (!custom_game_spec_.has_value())
     {
@@ -256,7 +256,7 @@ void CLIInterface::createCustomGame()
     }
 }
 
-void CLIInterface::setupCallbacks()
+void CLI::setupCallbacks()
 {
     // Game state update
     client_.onGameStateUpdate(
@@ -340,7 +340,7 @@ void CLIInterface::setupCallbacks()
         });
 }
 
-void CLIInterface::handleUserInput()
+void CLI::handleUserInput()
 {
     while (client_.isRunning())
     {
