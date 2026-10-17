@@ -88,8 +88,7 @@ void CLI::printBoard(const GameStateUpdate &state)
     std::optional<GameInfo> const gameInfo = client_.getGameInfo();
     if (gameInfo.has_value())
     {
-        std::cout << "Connect " << (int)gameInfo->config.connect_length << " to win!"
-                  << std::endl;
+        std::cout << "Connect " << (int)gameInfo->config.connect_length << " to win!" << std::endl;
     }
 
     // Print players

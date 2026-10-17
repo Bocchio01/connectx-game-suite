@@ -59,7 +59,7 @@ cmake ..
 cmake --build .
 ```
 
-This will generate the executables for the client and server in the `build` directory.
+This will generate the executables for the client and server in the `build/bin` directory.
 
 ### Running the first game
 
@@ -98,6 +98,10 @@ Then, when starting the client, specify the server address:
 
 Replace `X.X.X.X` with the public IP address of the server and `X` with the port number you configured.
 
+> [!TIP]
+> @DLR, you can find an instance of the server running on the node `rmc-lx0274:8080`.
+> Connect to it using `./connectx-cli --host rmc-lx0274`, or directly modify the constructor of the `CLIInterface` class by replacing the current default `localhost`.
+
 
 ## Known issues
 
@@ -127,6 +131,3 @@ If you want to contribute code, please fork the repository and create a pull req
 Have a nice coding day,
 
 Tommaso :panda_face:
-
-
-
