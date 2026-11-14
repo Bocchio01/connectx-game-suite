@@ -7,6 +7,7 @@
 #include <mutex>
 #include <queue>
 #include <sockpp/tcp_acceptor.h>
+#include <string>
 #include <thread>
 
 #include "protocol/protocol.hpp"
@@ -21,7 +22,12 @@
 class GameServer
 {
 public:
-    explicit GameServer(uint16_t port = Protocol::DEFAULT_PORT);
+    /**
+     * @param port Port to listen on
+     * @param bind_address Address of the network interface to listen on, e.g. "127.0.0.1" to accept only
+     *        clients of this machine (and not to be reachable from the network). Empty = all interfaces.
+     */
+    explicit GameServer(uint16_t port = Protocol::DEFAULT_PORT, std::string bind_address = "");
     ~GameServer();
 
     /**
@@ -38,6 +44,11 @@ public:
      * Check if server is running
      */
     bool isRunning() const { return running_; }
+
+    /**
+     * Number of open client connections (with or without a session): for diagnostics and tests
+     */
+    size_t connectionCount();
 
 private:
     /**
@@ -76,11 +87,13 @@ private:
     void broadcastGameState(uint32_t game_id);
     uint32_t createGame(uint8_t rows, uint8_t cols, uint8_t num_players,
                         uint8_t connect_length, std::string game_name = "");
+    std::shared_ptr<GameSession> findGame(uint32_t game_id); // nullptr if there is no such game
     GameInfo getGameInfo(uint32_t game_id, const GameSession &game);
     GameStateUpdate createGameStateUpdate(const GameSession &game);
     void skipAbandonedPlayers(const std::shared_ptr<GameSession> &game);
 
     uint16_t port_;
+    std::string bind_address_;
 
     sockpp::tcp_acceptor acceptor_;
     SessionManager session_manager_;

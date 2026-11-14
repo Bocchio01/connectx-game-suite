@@ -7,8 +7,8 @@ project(Connectx VERSION 3.0 LANGUAGES CXX)
 option(BUILD_CORE "Build core library" ON)
 option(BUILD_NETWORK "Build network components" ON)
 option(BUILD_CLI "Build CLI client" ON)
-option(BUILD_GUI "Build GUI client" OFF)
-option(BUILD_AI "Build AI client" OFF)
+option(BUILD_GUI "Build GUI client" ON)
+option(BUILD_AI "Build AI client" ON)
 
 option(BUILD_TESTS "Build test executables" OFF)
 option(BUILD_EXAMPLES "Build example executables" OFF)
@@ -56,6 +56,13 @@ include(FetchContent)
 # Speed up FetchContent by using shallow clones
 set(FETCHCONTENT_QUIET OFF)
 set(FETCHCONTENT_UPDATES_DISCONNECTED ON) # Don't update every time
+
+# spdlog keeps a thread_local std::map (its "mapped diagnostic context") for every thread that logs.
+# With MinGW-w64 the destructors of thread_local objects can run on memory that was already released when a
+# thread ends, which crashes the program (heap corruption, exit code 0xC0000374): we have seen it with the
+# short-lived threads that log, like the event thread of the client. Nothing here uses that context, so
+# spdlog is built without thread-local storage (the only cost is that the thread id is not cached).
+set(SPDLOG_NO_TLS ON CACHE BOOL "Build spdlog without thread-local storage (see CMakeLists.txt)" FORCE)
 
 # Declare all dependencies upfront
 message(STATUS "Fetching spdlog...")
@@ -138,6 +145,12 @@ endif()
 # =========================================================
 # Add subdirectories
 # =========================================================
+
+# Must happen before the subdirectories below: ai/ registers its own tests
+if(BUILD_TESTS)
+    enable_testing()
+endif()
+
 if(BUILD_CORE)
     message(STATUS "Adding core library...")
     add_subdirectory(core)

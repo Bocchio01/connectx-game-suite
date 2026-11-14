@@ -45,7 +45,6 @@ void CLI::printHelp()
     std::cout << "  -n, --name             Your player name" << std::endl;
     std::cout << "  -g, --game             Game specification (see below)" << std::endl;
     std::cout << "  -l, --list             List available games and exit" << std::endl;
-    // std::cout << "  --ai                   Create game with AI opponent" << std::endl;
     std::cout << "  --host                 Server hostname (default: localhost)" << std::endl;
     std::cout << "  -p, --port             Server port (default: " << Protocol::DEFAULT_PORT << ")" << std::endl;
     std::cout << "\nGame Specification Formats:" << std::endl;
@@ -62,7 +61,10 @@ void CLI::printHelp()
     std::cout << "  connectx-cli -g 42" << std::endl;
     std::cout << "  connectx-cli -g MyGame" << std::endl;
     std::cout << "  connectx-cli -g 'BigGame<10 12 3 5>'" << std::endl;
-    // std::cout << "  connectx-cli --ai" << std::endl;
+    std::cout << "\nPlaying against the computer:" << std::endl;
+    std::cout << "  start 'connectx-ai -g <name>' in another terminal: it joins the game and plays with the" << std::endl;
+    std::cout << "  algorithm of your choice (see 'connectx-ai --help' and 'connectx-ai --list-agents')." << std::endl;
+    std::cout << "  Example: connectx-cli -g 'Duel<6 7 2 4>'   and   connectx-ai -g Duel --agent alphabeta:depth=10" << std::endl;
 }
 
 void CLI::printLobby(const GameStateUpdate &state)

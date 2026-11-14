@@ -78,5 +78,4 @@ private:
     std::vector<uint32_t> connections_; // connection_id for each player
     std::map<uint32_t, uint8_t> connection_to_player_; // connection_id -> player_id
     uint8_t max_players_;
-    uint8_t next_player_id_;
 };

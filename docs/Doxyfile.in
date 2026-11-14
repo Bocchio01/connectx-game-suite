@@ -17,10 +17,15 @@ INPUT                  = \
   @CMAKE_SOURCE_DIR@/core \
   @CMAKE_SOURCE_DIR@/network \
   @CMAKE_SOURCE_DIR@/ui/cli \
+  @CMAKE_SOURCE_DIR@/ui/gui \
+  @CMAKE_SOURCE_DIR@/ai \
   @CMAKE_SOURCE_DIR@/README.md
 
 FILE_PATTERNS          = *.h *.hpp *.cpp *.md
 RECURSIVE              = YES
+
+# Build trees (e.g. the one Qt Creator keeps inside ui/gui) and test fixtures are not part of the API
+EXCLUDE_PATTERNS       = */build/* */tests/data/*
 
 # Doxygen layout and style
 EXTRACT_ALL            = YES

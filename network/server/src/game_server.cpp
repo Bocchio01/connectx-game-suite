@@ -4,7 +4,8 @@
 
 #include "server/game_server.hpp"
 
-GameServer::GameServer(uint16_t port) : port_(port), running_(false)
+GameServer::GameServer(uint16_t port, std::string bind_address)
+    : port_(port), bind_address_(std::move(bind_address)), running_(false)
 {
 }
 
@@ -20,8 +21,20 @@ void GameServer::start()
     // Initialize sockpp library
     sockpp::socket_initializer::initialize();
 
-    // Create acceptor
-    if (!acceptor_.open(port_))
+    // Create acceptor: on every network interface, or only on the requested one
+    bool opened = false;
+    try
+    {
+        opened = bind_address_.empty() ? acceptor_.open(port_)
+                                       : acceptor_.open(sockpp::inet_address(bind_address_, port_));
+    }
+    catch (const std::exception &e)
+    {
+        spdlog::error("Invalid address to listen on '{}': {}", bind_address_, e.what());
+        return;
+    }
+
+    if (!opened)
     {
         spdlog::error("Error creating acceptor: {}", acceptor_.last_error_str());
         return;
@@ -31,7 +44,10 @@ void GameServer::start()
     running_ = true;
     sockpp::inet_address addr = acceptor_.address();
     uint16_t port = addr.port();
-    spdlog::info("Server started successfully on port {}", port);
+    if (bind_address_.empty())
+        spdlog::info("Server started successfully on port {}", port);
+    else
+        spdlog::info("Server started successfully on port {} (listening on {} only)", port, bind_address_);
 
     // Accept connections
     acceptConnections();
@@ -165,54 +181,57 @@ void GameServer::onDisconnect(uint32_t connection_id)
 {
     spdlog::debug("Connection ID({}) disconnected", connection_id);
 
-    // Retrieve session
+    // Retrieve session (a client that connected and left without introducing itself, like a port probe,
+    // has none: its connection must be forgotten all the same, see the end of the function)
     auto session_opt = session_manager_.getSessionByConnection(connection_id);
-    if (!session_opt.has_value())
-        return;
-
-    auto session = session_opt.value();
-    std::shared_ptr<GameSession> game = nullptr;
-
-    // Handle associated game
-    if (session.game_id != 0)
+    if (session_opt.has_value())
     {
+        auto session = session_opt.value();
+        std::shared_ptr<GameSession> game = nullptr;
+
+        // Handle associated game
+        if (session.game_id != 0)
         {
-            std::lock_guard<std::mutex> lock(games_mutex_);
-            auto it = games_.find(session.game_id);
-            if (it != games_.end())
             {
-                game = it->second; // keep shared_ptr alive after unlock
-                spdlog::debug("Player ID({}) removed from game ID({})",
-                              (int)session.player_id, session.game_id);
-
-                game->removePlayer(connection_id);
-
-                if (game->getPlayerCount() == 0)
+                std::lock_guard<std::mutex> lock(games_mutex_);
+                auto it = games_.find(session.game_id);
+                if (it != games_.end())
                 {
-                    spdlog::debug("Game ID({}) removed (empty)", it->first);
-                    free_game_ids_.push(it->first);
-                    games_.erase(it);
-                    game.reset();
+                    game = it->second; // keep shared_ptr alive after unlock
+                    spdlog::debug("Player ID({}) removed from game ID({})",
+                                  (int)session.player_id, session.game_id);
+
+                    game->removePlayer(connection_id);
+
+                    if (game->getPlayerCount() == 0)
+                    {
+                        spdlog::debug("Game ID({}) removed (empty)", it->first);
+                        free_game_ids_.push(it->first);
+                        games_.erase(it);
+                        game.reset();
+                    }
                 }
+            }
+
+            if (game)
+            {
+                spdlog::debug("Broadcasting updated game state for game ID({})", session.game_id);
+                skipAbandonedPlayers(game);
+                broadcastGameState(session.game_id);
             }
         }
 
-        if (game)
-        {
-            spdlog::debug("Broadcasting updated game state for game ID({})", session.game_id);
-            skipAbandonedPlayers(game);
-            broadcastGameState(session.game_id);
-        }
+        // Remove session
+        session_manager_.removeSession(connection_id);
     }
 
-    // Remove session
-    session_manager_.removeSession(connection_id);
-
-    // Remove connection
+    // Remove connection. This function runs twice for a client that sends a DISCONNECT message (once for the
+    // message, once when its socket closes): the id must be recycled only once, or two later connections
+    // would be given the same one.
     {
         std::lock_guard<std::mutex> lock(connections_mutex_);
-        connections_.erase(connection_id);
-        free_connection_ids_.push(connection_id);
+        if (connections_.erase(connection_id) > 0)
+            free_connection_ids_.push(connection_id);
     }
 }
 
@@ -283,9 +302,16 @@ void GameServer::handleCreateGame(std::shared_ptr<Connection> conn, const std::s
     spdlog::debug("Game ID({}) created by connection ID({})", game_id, conn->getId());
 
     // Send response
+    std::shared_ptr<GameSession> created = findGame(game_id);
+    if (!created)
+    {
+        sendError(conn, Protocol::ErrorCode::GAME_NOT_FOUND, "Game not found");
+        return;
+    }
+
     CreateGameResponse resp;
     resp.success = true;
-    resp.game_info = getGameInfo(game_id, *games_[game_id]);
+    resp.game_info = getGameInfo(game_id, *created);
     resp.message = "Game created successfully";
 
     std::string respPayload = MessageSerializer::serialize(resp);
@@ -356,7 +382,12 @@ void GameServer::handleJoinGame(std::shared_ptr<Connection> conn, const std::str
         {
             // Create a standard game if none available
             req.game_id = createGame(6, 7, 2, 4, ""); // Default config
-            game = games_[req.game_id];
+            game = findGame(req.game_id);
+            if (!game)
+            {
+                sendError(conn, Protocol::ErrorCode::GAME_NOT_FOUND, "Game not found");
+                return;
+            }
         }
     }
     else
@@ -570,6 +601,19 @@ uint32_t GameServer::createGame(uint8_t rows, uint8_t cols, uint8_t num_players,
     games_[game_id] = game;
 
     return game_id;
+}
+
+size_t GameServer::connectionCount()
+{
+    std::lock_guard<std::mutex> lock(connections_mutex_);
+    return connections_.size();
+}
+
+std::shared_ptr<GameSession> GameServer::findGame(uint32_t game_id)
+{
+    std::lock_guard<std::mutex> lock(games_mutex_);
+    auto it = games_.find(game_id);
+    return it != games_.end() ? it->second : nullptr;
 }
 
 GameInfo GameServer::getGameInfo(uint32_t game_id, const GameSession &game)

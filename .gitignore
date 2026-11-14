@@ -58,3 +58,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Python (ai/python)
+__pycache__/
+*.pyc
+.venv/

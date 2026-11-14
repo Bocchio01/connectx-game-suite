@@ -1,0 +1,9 @@
+# NumPy is enough to read models/datasets, evaluate and play (cxnn.py, eval_model.py, play.py, make_header.py)
+numpy>=1.26
+
+# Needed for export_tflite.py and train_keras.py. CPU build; wheels exist only for some Python versions
+# (see https://www.tensorflow.org/install/pip). The scripts use the TensorFlow 2.16+ API (Keras 3).
+tensorflow>=2.16
+
+# Optional: the LiteRT interpreter (the new name of the TensorFlow Lite runtime)
+# ai-edge-litert

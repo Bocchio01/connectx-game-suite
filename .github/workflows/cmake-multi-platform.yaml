@@ -54,22 +54,57 @@ jobs:
       run: |
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
 
+    - name: Install NumPy (for the Python tests of the AI module)
+      # TensorFlow is not needed: the tests only use NumPy. If it cannot be installed the Python test is
+      # reported as skipped, which is not worth failing the build for.
+      continue-on-error: true
+      run: python -m pip install numpy
+
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+      # The Qt GUI is built (and tested) by its own job below: the runners of this one have no Qt.
       run: >
         cmake -B ${{ steps.strings.outputs.build-output-dir }}
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
         -DCMAKE_C_COMPILER=${{ matrix.c_compiler }}
         -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+        -DBUILD_GUI=OFF
+        -DBUILD_TESTS=ON
         -S ${{ github.workspace }}
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
-      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }}
+      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }} --parallel
 
     - name: Test
       working-directory: ${{ steps.strings.outputs.build-output-dir }}
       # Execute tests defined by the CMake configuration. Note that --build-config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
-      run: ctest --build-config ${{ matrix.build_type }}
+      run: ctest --build-config ${{ matrix.build_type }} --output-on-failure --timeout 600
+
+  gui:
+    # The Qt GUI, built and tested headless (Qt's "offscreen" platform plugin). It has never run on GitHub's
+    # runners: it does not block the workflow (continue-on-error) until it has proved to be stable there.
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Qt 6
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y qt6-base-dev libgl1-mesa-dev libxkbcommon-dev
+
+    - name: Configure CMake
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Release -DBUILD_GUI=ON -DBUILD_AI=ON -DBUILD_TESTS=ON -S .
+
+    - name: Build
+      run: cmake --build build --parallel
+
+    - name: Test the GUI
+      working-directory: build
+      env:
+        QT_QPA_PLATFORM: offscreen
+      run: ctest --output-on-failure --timeout 600 -R "gui"

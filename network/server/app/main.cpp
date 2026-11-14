@@ -16,10 +16,11 @@
 SERVICE_STATUS_HANDLE g_ServiceStatusHandle = nullptr;
 SERVICE_STATUS g_ServiceStatus{}; // all fields zeroed
 uint16_t g_servicePort = Protocol::DEFAULT_PORT;
+std::string g_serviceBindAddress;
 void ReportServiceStatus(DWORD currentState, DWORD win32ExitCode, DWORD waitHint);
 void WINAPI ServiceCtrlHandler(DWORD ctrl);
 void WINAPI ServiceMain(DWORD argc, LPWSTR *argv);
-void runAsWindowsService(uint16_t port);
+void runAsWindowsService(uint16_t port, const std::string &bind_address);
 #endif
 
 #ifndef _WIN32
@@ -34,9 +35,9 @@ GameServer *game_server = nullptr;
 
 void setupLogger(spdlog::level::level_enum console_log_level,
                  spdlog::level::level_enum file_log_level = spdlog::level::debug);
-void parseArguments(int argc, char *argv[], uint16_t &port, bool &run_as_daemon);
+void parseArguments(int argc, char *argv[], uint16_t &port, bool &run_as_daemon, std::string &bind_address);
 void printUsage(const char *program_name);
-int runServer(uint16_t port);
+int runServer(uint16_t port, const std::string &bind_address);
 void signalHandler(int signal);
 
 // ================================================================
@@ -46,24 +47,25 @@ int main(int argc, char *argv[])
 {
     bool run_as_daemon = false;
     uint16_t port = Protocol::DEFAULT_PORT;
+    std::string bind_address; // empty = every network interface
 
     setupLogger(spdlog::level::info);
-    parseArguments(argc, argv, port, run_as_daemon);
+    parseArguments(argc, argv, port, run_as_daemon, bind_address);
 
     if (run_as_daemon)
     {
         spdlog::debug("Starting server in daemon/service mode...");
 #ifdef _WIN32
-        runAsWindowsService(port);
+        runAsWindowsService(port, bind_address);
         std::exit(EXIT_SUCCESS);
 #else
         daemonize();
-        return runServer(port);
+        return runServer(port, bind_address);
 #endif
     }
 
     spdlog::debug("Starting server in foreground mode...");
-    return runServer(port);
+    return runServer(port, bind_address);
 }
 
 /**
@@ -86,6 +88,8 @@ void printUsage(const char *program_name)
     std::cout << "Usage: " << program_name << std::endl;
     std::cout << "  -h, --help    Show this message\n";
     std::cout << "  -p, --port    Specify the port number (default: " << Protocol::DEFAULT_PORT << ")\n";
+    std::cout << "  -b, --bind    Address of the network interface to listen on (default: all of them);\n";
+    std::cout << "                use 127.0.0.1 to accept only clients running on this machine\n";
     std::cout << "  -d, --daemon  Run in background (daemon/service)\n";
     std::cout << std::endl;
 }
@@ -117,7 +121,7 @@ void setupLogger(spdlog::level::level_enum console_log_level, spdlog::level::lev
     }
 }
 
-void parseArguments(int argc, char *argv[], uint16_t &port, bool &run_as_daemon)
+void parseArguments(int argc, char *argv[], uint16_t &port, bool &run_as_daemon, std::string &bind_address)
 {
     for (int i = 1; i < argc; ++i)
     {
@@ -158,6 +162,21 @@ void parseArguments(int argc, char *argv[], uint16_t &port, bool &run_as_daemon)
             }
         }
 
+        // Address to listen on
+        else if (arg == "-b" || arg == "--bind")
+        {
+            if (i + 1 < argc)
+            {
+                bind_address = argv[++i];
+            }
+            else
+            {
+                spdlog::error("Address not specified after {}", arg);
+                printUsage(argv[0]);
+                std::exit(EXIT_FAILURE);
+            }
+        }
+
         // Daemon/Service argument
         else if (arg == "-d" || arg == "--daemon")
         {
@@ -177,11 +196,11 @@ void parseArguments(int argc, char *argv[], uint16_t &port, bool &run_as_daemon)
 /**
  * @brief Start the game server logic
  */
-int runServer(uint16_t port)
+int runServer(uint16_t port, const std::string &bind_address)
 {
     try
     {
-        GameServer server(port);
+        GameServer server(port, bind_address);
         game_server = &server;
 
         std::signal(SIGINT, signalHandler);
@@ -283,7 +302,7 @@ void WINAPI ServiceMain(DWORD argc, LPWSTR *argv)
     // Launch your server thread
     std::thread([]
                 {
-        runServer(g_servicePort);
+        runServer(g_servicePort, g_serviceBindAddress);
         ReportServiceStatus(SERVICE_STOPPED, NO_ERROR, 0); })
         .detach();
 
@@ -293,9 +312,10 @@ void WINAPI ServiceMain(DWORD argc, LPWSTR *argv)
         Sleep(1000);
 }
 
-void runAsWindowsService(uint16_t port)
+void runAsWindowsService(uint16_t port, const std::string &bind_address)
 {
     g_servicePort = port;
+    g_serviceBindAddress = bind_address;
 
     SERVICE_TABLE_ENTRYW serviceTable[] = {
         {const_cast<LPWSTR>(L"ConnectxService"), (LPSERVICE_MAIN_FUNCTIONW)ServiceMain},

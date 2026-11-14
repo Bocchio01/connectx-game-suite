@@ -25,16 +25,10 @@ void test_callback_registration()
 
     Client client;
 
-    bool connected_called = false;
     bool disconnected_called = false;
     bool state_update_called = false;
-    bool game_over_called = false;
     bool move_result_called = false;
     bool error_called = false;
-    bool game_list_called = false;
-
-    client.onConnected([&]()
-                       { connected_called = true; });
 
     client.onDisconnected([&]()
                           { disconnected_called = true; });
@@ -48,8 +42,8 @@ void test_callback_registration()
     client.onError([&](uint16_t, const std::string &)
                    { error_called = true; });
 
-    client.onGameList([&](const std::vector<GameInfo> &)
-                      { game_list_called = true; });
+    // Nothing has happened yet: no callback has fired
+    assert(!disconnected_called && !state_update_called && !move_result_called && !error_called);
 
     // All callbacks should be registered (not null)
     std::cout << " passed" << std::endl;

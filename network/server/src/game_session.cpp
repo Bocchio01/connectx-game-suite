@@ -8,7 +8,6 @@ GameSession::GameSession(
     , name_(name)
     , engine_(rows, cols, num_players, connect_length)
     , max_players_(num_players)
-    , next_player_id_(1)
 {
 }
 
@@ -16,7 +15,14 @@ uint8_t GameSession::addPlayer(uint32_t connection_id)
 {
     if (isFull()) return 0;
 
-    uint8_t player_id = next_player_id_++;
+    // The lowest id nobody holds: a player who left the lobby gives his id to the next one who joins
+    // (ids must stay in 1..max_players, the engine only gives turns to those).
+    uint8_t player_id = 1;
+    while (std::any_of(connection_to_player_.begin(), connection_to_player_.end(),
+                       [player_id](const auto& entry) { return entry.second == player_id; }))
+    {
+        ++player_id;
+    }
     connections_.push_back(connection_id);
     connection_to_player_[connection_id] = player_id;
 

@@ -116,6 +116,40 @@ void test_get_connections()
     std::cout << " passed" << std::endl;
 }
 
+void test_ids_are_reused_when_a_player_leaves_the_lobby()
+{
+    std::cout << "Testing player ids after a player leaves the lobby...";
+
+    GameSession game(1, 6, 7, 3, 4);
+
+    assert(game.addPlayer(10) == 1);
+    assert(game.addPlayer(20) == 2);
+
+    // The first player leaves before the game starts: the next one takes his id, and nobody ever gets an
+    // id above the number of players (the engine only gives turns to ids 1..3: such a player would never play)
+    game.removePlayer(10);
+    assert(game.addPlayer(30) == 1);
+    assert(game.addPlayer(40) == 3);
+    assert(game.isFull());
+    assert(game.getEngine().getState().getStatus() == GameStatus::IN_PROGRESS);
+
+    assert(game.getPlayerId(20).value() == 2);
+    assert(game.getPlayerId(30).value() == 1);
+    assert(game.getPlayerId(40).value() == 3);
+
+    // The same when the one who leaves is in the middle of four
+    GameSession other(2, 6, 7, 4, 4);
+    assert(other.addPlayer(1) == 1);
+    assert(other.addPlayer(2) == 2);
+    assert(other.addPlayer(3) == 3);
+    other.removePlayer(2);
+    assert(other.addPlayer(4) == 2);
+    assert(other.addPlayer(5) == 4);
+    assert(other.isFull());
+
+    std::cout << " passed" << std::endl;
+}
+
 void test_custom_game_config()
 {
     std::cout << "Testing custom game configuration...";
@@ -153,6 +187,7 @@ int main()
         test_get_player_id();
         test_remove_player();
         test_get_connections();
+        test_ids_are_reused_when_a_player_leaves_the_lobby();
         test_custom_game_config();
 
         std::cout << "\n=== All GameSession tests passed! ===" << std::endl;
