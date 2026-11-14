@@ -9,6 +9,7 @@ option(BUILD_NETWORK "Build network components" ON)
 option(BUILD_CLI "Build CLI client" ON)
 option(BUILD_GUI "Build GUI client" ON)
 option(BUILD_AI "Build AI client" ON)
+option(BUILD_GATEWAY "Build the web gateway (WebSocket front door of the server)" ON)
 
 option(BUILD_TESTS "Build test executables" OFF)
 option(BUILD_EXAMPLES "Build example executables" OFF)
@@ -176,6 +177,16 @@ if(BUILD_AI)
     add_subdirectory(ai)
 endif()
 
+# After the AI module: the gateway uses its computer player, when there is one
+if(BUILD_GATEWAY)
+    if(BUILD_NETWORK)
+        message(STATUS "Adding web gateway...")
+        add_subdirectory(network/gateway)
+    else()
+        message(WARNING "The web gateway needs the network components: skipping it")
+    endif()
+endif()
+
 # =========================================================
 # Testing setup
 # =========================================================
@@ -238,6 +249,7 @@ message(STATUS " - Network:           ${BUILD_NETWORK}")
 message(STATUS " - CLI client:        ${BUILD_CLI}")
 message(STATUS " - GUI client:        ${BUILD_GUI}")
 message(STATUS " - AI client:         ${BUILD_AI}")
+message(STATUS " - Web gateway:       ${BUILD_GATEWAY}")
 message(STATUS "")
 message(STATUS "Options:")
 message(STATUS " - Build tests:       ${BUILD_TESTS}")

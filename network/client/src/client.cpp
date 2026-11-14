@@ -418,7 +418,7 @@ bool Client::answerPending(Reply::Kind kind, MessageType type, std::string paylo
 int Client::waitForData(int timeout_ms)
 {
     const auto handle = socket_.handle();
-    if (handle == INVALID_SOCKET)
+    if (handle == sockpp::INVALID_SOCKET)
         return -1;
 
 #ifdef _WIN32

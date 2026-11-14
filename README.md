@@ -39,6 +39,7 @@ Each module serves a specific purpose.
 - **Client library**: provides a high-level API for clients to interact with the server, abstracting away networking details;
 - **CLI**: offers a terminal-based interface for players to join games and make moves.
 - **GUI**: a graphical client built with Qt 6 on top of the client library: connect, browse and create games, play ([ui/gui](ui/gui/README.md)).
+- **Web gateway**: lets web browsers play on the server, which they cannot reach on their own (a page cannot open a TCP connection): it carries their WebSocket connections to it, and the server stays as it is ([network/gateway](network/gateway/README.md)).
 - **AI module**: computer-controlled opponents, all written from scratch for learning purposes: random and rule-based players, minimax, alpha-beta, an exact solver, Monte Carlo tree search and neural networks (from a plain policy/value network to AlphaZero-style self-play), plus the tools to compare and train them and the road to TensorFlow Lite and an Arduino ([ai](ai/README.md)). An AI player is just another client of the server: it is indistinguishable from a human one.
 
 
@@ -66,6 +67,7 @@ What gets built is controlled by a few options (`cmake -DNAME=VALUE ..`):
 |---|:-:|---|
 | `BUILD_GUI` | `ON` | the graphical client; it needs [Qt 6](https://www.qt.io/download-qt-installer) (Widgets). If CMake cannot find Qt it prints a warning and skips the GUI: point `CMAKE_PREFIX_PATH` to a Qt kit (e.g. `-DCMAKE_PREFIX_PATH=C:/Qt/6.9.3/mingw_64`) or switch it off with `-DBUILD_GUI=OFF` |
 | `BUILD_AI` | `ON` | the AI module: `connectx-ai` (computer player), `connectx-arena` (tournaments), `connectx-train` (training) and the pretrained network |
+| `BUILD_GATEWAY` | `ON` | the web gateway, `connectx-gateway`: the WebSocket front door that lets web browsers play (it needs `BUILD_NETWORK`, and offers computer opponents if `BUILD_AI` is on too) |
 | `BUILD_TESTS` | `OFF` | the unit and integration tests, then run `ctest` in the build directory |
 | `BUILD_CLI`, `BUILD_NETWORK`, `BUILD_CORE` | `ON` | the command-line client, the network components (server, client library), the game engine |
 
@@ -129,6 +131,11 @@ By default the server listens on every network interface. To accept only clients
 > [!TIP]
 > @DLR, you can find an instance of the server running on the node `rmc-lx0274:8080`.
 > Connect to it using `./connectx-cli --host rmc-lx0274`, or directly modify the constructor of the `CLIInterface` class by replacing the current default `localhost`.
+
+#### Playing from a web page
+
+A browser cannot open a TCP connection, so a web page cannot connect to the server by itself. The [web gateway](network/gateway/README.md) is the adapter: `./connectx-gateway` accepts WebSocket connections and carries each one to the server over a TCP connection of its own, so that a page can do everything the other clients do (lobby, rooms, quick match, the computer).
+The server is not modified and can keep listening on the machine itself: only the gateway, behind a reverse proxy such as `nginx` that provides TLS, faces the internet. The gateway's README explains the protocol for those who write a web client, and how to run both programs as services behind `nginx`.
 
 
 ## Known issues
