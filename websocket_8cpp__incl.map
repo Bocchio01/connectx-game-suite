@@ -1,0 +1,28 @@
+<map id="websocket.cpp" name="websocket.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="210,5,328,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,90,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,36,103,78,100,73,231,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,81,168,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,35,178,75,175,71,248,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,81,257,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,32,243,69,238,66,259,36"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="282,81,347,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="278,31,301,68,295,67,276,36"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="370,81,445,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="294,31,372,73,367,74,293,36"/>
+<area shape="rect" id="Node000007" href="$websocket_8hpp.html" title=" " alt="" coords="469,81,647,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="321,31,494,76,489,78,321,36"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="345,157,414,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="529,108,426,153,424,148,524,110"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="607,232,672,260"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="533,108,508,126,487,144,475,163,475,173,479,183,502,206,531,222,562,233,594,241,589,241,560,238,528,227,499,210,475,186,469,174,470,162,482,140,505,122,528,110"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="489,157,539,184"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="553,108,531,145,528,141,548,111"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="564,157,638,184"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="567,107,588,144,583,142,565,112"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="662,157,721,184"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="583,107,658,149,652,149,581,112"/>
+<area shape="rect" id="Node000013" href="$constants_8hpp.html" title=" " alt="" coords="744,157,914,184"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="607,107,769,152,763,152,606,112"/>
+<area shape="poly" id="edge13_Node000013_Node000009" title=" " alt="" coords="798,184,687,229,686,224,792,185"/>
+</map>

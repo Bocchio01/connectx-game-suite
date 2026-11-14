@@ -1,0 +1,35 @@
+var classBoardWidget =
+[
+    [ "OverlayStyle", "classBoardWidget.html#a1b73684c77b067a5c4526fad444ad30a", [
+      [ "Centered", "classBoardWidget.html#a1b73684c77b067a5c4526fad444ad30aadc5ffc2b720501ba00de3be1477b435d", null ],
+      [ "Banner", "classBoardWidget.html#a1b73684c77b067a5c4526fad444ad30aa6ff29916f99fff9d2494d28e721ae77e", null ]
+    ] ],
+    [ "BoardWidget", "classBoardWidget.html#ad925afc2b333128451608d0abd500831", null ],
+    [ "board", "classBoardWidget.html#aff852c9793eb8dd294839a2a3a626364", null ],
+    [ "cellPoint", "classBoardWidget.html#a2bb25cba024f111c6bc94e21985f284a", null ],
+    [ "cellSize", "classBoardWidget.html#a36287b9b2b1b51f0ea2f169080c062f4", null ],
+    [ "changeEvent", "classBoardWidget.html#abf9b99fe91fe6c138d9019fd6b4dbc00", null ],
+    [ "clearOverlay", "classBoardWidget.html#af8973656aea020dfaaa2495a29d8b1eb", null ],
+    [ "cols", "classBoardWidget.html#a4857588da86061f2b84e1b7e6303b29d", null ],
+    [ "columnActivated", "classBoardWidget.html#a40e86f62fbb5b9742a291ff0db3b4f60", null ],
+    [ "columnPoint", "classBoardWidget.html#a17b17aab0bc35af7d172fb2eb912d741", null ],
+    [ "hasWinningLine", "classBoardWidget.html#a6759bc42980be1657e062f1c3358bff7", null ],
+    [ "isAnimating", "classBoardWidget.html#abdc9522ad38bbbddcd39eb521f27c984", null ],
+    [ "isInputEnabled", "classBoardWidget.html#a0b5d7c848926cbb802f273b1720c1d84", null ],
+    [ "keyPressEvent", "classBoardWidget.html#a15a672c503a50ff9295217cf84a82ab7", null ],
+    [ "lastMove", "classBoardWidget.html#a60836b9434413206bea7bc1e61aa0c60", null ],
+    [ "leaveEvent", "classBoardWidget.html#a73224f7ccd125786e4294ceb993e38c7", null ],
+    [ "minimumSizeHint", "classBoardWidget.html#a4536b3a524d6bc4c1c84e3f63900e88f", null ],
+    [ "mouseMoveEvent", "classBoardWidget.html#ad7b9e19e7b0e7ba814aaa63aeb854f44", null ],
+    [ "mousePressEvent", "classBoardWidget.html#a1257b2c9961b5738069a0d6243b4df7c", null ],
+    [ "paintEvent", "classBoardWidget.html#a7f7bf53a26eec67e537b38ca41929186", null ],
+    [ "reset", "classBoardWidget.html#aae2e481cd975b946c97b19d0e835737b", null ],
+    [ "resizeEvent", "classBoardWidget.html#a4c52afae87040c26c5379c7e2c8c0d50", null ],
+    [ "rows", "classBoardWidget.html#a0fadbb0eeb14b151422b456c3b0d7b57", null ],
+    [ "setBoard", "classBoardWidget.html#a0facac0f9d723273e7031b204cf167f0", null ],
+    [ "setInputEnabled", "classBoardWidget.html#a4251a6d65f630872ba23fed12eedc367", null ],
+    [ "setLocalPlayer", "classBoardWidget.html#a292ac6e3e11d19c3b9f285f29fa9d164", null ],
+    [ "setOverlay", "classBoardWidget.html#a5f03367e2971b95028e4f17811a92eda", null ],
+    [ "setWinningLines", "classBoardWidget.html#aa7131328c7f9b2b23f473d02c5b4fa43", null ],
+    [ "sizeHint", "classBoardWidget.html#a59e975841215a42e670b47a26db70b85", null ]
+];

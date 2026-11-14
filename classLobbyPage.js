@@ -1,0 +1,27 @@
+var classLobbyPage =
+[
+    [ "LobbyPage", "classLobbyPage.html#a6653b7d7fd5d0958abec5b87bc139ec4", null ],
+    [ "changeEvent", "classLobbyPage.html#ac6d13cbcea9e38123f279e2831addd54", null ],
+    [ "clearMessage", "classLobbyPage.html#a98f2a6db2b8135ea6269ed8529809130", null ],
+    [ "disconnectRequested", "classLobbyPage.html#a0913039263aaefda2dc7b88772499d32", null ],
+    [ "eventFilter", "classLobbyPage.html#a9b37a635ce911c659f6f5008f4263e5d", null ],
+    [ "hideEvent", "classLobbyPage.html#a4e691d99cc00de0277721fad3779de16", null ],
+    [ "isBusy", "classLobbyPage.html#a00fff5183b02c1ba6c24f61c865954fa", null ],
+    [ "joinRequested", "classLobbyPage.html#aa0078a59203bbca546bea40608f5c8b4", null ],
+    [ "message", "classLobbyPage.html#a92ce868d6c26e526f0ef0641b245169b", null ],
+    [ "model", "classLobbyPage.html#afb5507a28e3dfa7d1e53bd11024eb46b", null ],
+    [ "newGameRequested", "classLobbyPage.html#ad54895c6df062fa52abe7080213aa735", null ],
+    [ "openNewGameDialog", "classLobbyPage.html#aec3781f772d9f301424fb744251a9994", null ],
+    [ "quickPlayRequested", "classLobbyPage.html#a7378cb654326305fe0d80dc4f371966e", null ],
+    [ "refreshRequested", "classLobbyPage.html#a074d284dcc50ee74a7ea22348d451896", null ],
+    [ "selectedGameId", "classLobbyPage.html#a8a025a0ab7bd1ddee9debd5209bebb94", null ],
+    [ "selectGame", "classLobbyPage.html#af46a3883518d41452b8e65aea4a44e66", null ],
+    [ "setBusy", "classLobbyPage.html#ace010e98fcbf6f83982fb5ab7c028180", null ],
+    [ "setConnection", "classLobbyPage.html#af2cf45b9ef4dfb318cdbdab2e460109f", null ],
+    [ "setGames", "classLobbyPage.html#a189e4ad32f04dc4a6e7c9e42d7c41c4f", null ],
+    [ "setHelperPrograms", "classLobbyPage.html#a1a183a2942cbd19919537953b2f34aec", null ],
+    [ "setListStale", "classLobbyPage.html#ad4244b7791de6e5981e66ef6a0292f73", null ],
+    [ "showError", "classLobbyPage.html#ac5a007507daeef6cd4fb2bb462ab242d", null ],
+    [ "showEvent", "classLobbyPage.html#aad8746fbbf7efcb676fd46afcfcf85ac", null ],
+    [ "showInfo", "classLobbyPage.html#a591a0b718a7504acc35073a04e5d33e1", null ]
+];

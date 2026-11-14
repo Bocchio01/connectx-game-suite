@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['id_0',['id',['../structPlayerEntry.html#ad9c1290493df6e0ad1aca0a50c3ae94a',1,'PlayerEntry']]],
+  ['idle_5flimit_1',['idle_limit',['../structgateway_1_1Settings.html#ab09471c373cec8e2bfe005db1658ebf6',1,'gateway::Settings']]],
+  ['illegal_5fmove_2',['illegal_move',['../structai_1_1GameResult.html#a3375667e9c220f4ec01838aa92e19db9',1,'ai::GameResult']]],
+  ['illegal_5fmoves_3',['illegal_moves',['../structai_1_1PairResult.html#ac91db650cb45427d0939971d42e67849',1,'ai::PairResult']]],
+  ['info_4',['info',['../structai_1_1MoveChoice.html#a41758048bbbc523f13642b68b7a377c1',1,'ai::MoveChoice']]],
+  ['init_5fmodel_5',['init_model',['../structai_1_1training_1_1SupervisedOptions.html#ae881ceb169dca0b9c74099f02097dcd3',1,'ai::training::SupervisedOptions::init_model'],['../structai_1_1training_1_1SelfPlayOptions.html#a767860965bbc899e0b186d49eec82bb3',1,'ai::training::SelfPlayOptions::init_model']]],
+  ['input_5fsize_6',['input_size',['../structnn_1_1NetworkConfig.html#a330c0665c248949cafb37ede1926ed16',1,'nn::NetworkConfig']]],
+  ['internal_5ferror_7',['INTERNAL_ERROR',['../namespacewebsocket_1_1CloseCode.html#a75e3b32ca01656a55d3360898218bc4d',1,'websocket::CloseCode']]],
+  ['invalid_5fdata_8',['INVALID_DATA',['../namespacewebsocket_1_1CloseCode.html#adba2fbbf514f54d880c5c2f306723e55',1,'websocket::CloseCode']]],
+  ['invalid_5fmessage_9',['INVALID_MESSAGE',['../namespaceProtocol_1_1ErrorCode.html#affce1b8d56c501f41eb90b44d89797dd',1,'Protocol::ErrorCode']]],
+  ['invalid_5fmove_10',['INVALID_MOVE',['../namespaceProtocol_1_1ErrorCode.html#a27e85d0d9629ea94f22814e23c576dcb',1,'Protocol::ErrorCode']]],
+  ['invalid_5fsession_5ftoken_11',['INVALID_SESSION_TOKEN',['../namespaceProtocol_1_1ErrorCode.html#a3dca8318df307e835ccecfdd4ba939b9',1,'Protocol::ErrorCode']]],
+  ['iscurrent_12',['isCurrent',['../structPlayerEntry.html#ae824b888cd1e868f0856e1930266aed2',1,'PlayerEntry']]],
+  ['isme_13',['isMe',['../structPlayerEntry.html#acf7803d3d872a97a7729ec0c0b48979d',1,'PlayerEntry']]],
+  ['iswinner_14',['isWinner',['../structPlayerEntry.html#a763857cf22e1ad02bf7570b16b3889aa',1,'PlayerEntry']]],
+  ['iterations_15',['iterations',['../structai_1_1training_1_1SelfPlayOptions.html#aa48b2a68abf2f6149e5c0f3a8310be7b',1,'ai::training::SelfPlayOptions']]],
+  ['iterative_16',['iterative',['../structai_1_1AlphaBetaAgent_1_1Options.html#a7573df6b3aff91ecf7206db9f962ef06',1,'ai::AlphaBetaAgent::Options']]]
+];

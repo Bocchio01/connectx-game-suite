@@ -1,0 +1,30 @@
+<map id="minimax_agent.hpp" name="minimax_agent.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="274,5,425,33"/>
+<area shape="rect" id="Node000002" href="$agent_8hpp.html" title=" " alt="" coords="298,81,401,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,31,352,66,347,64,348,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,308,153,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,99,227,109,145,131,105,148,68,170,36,199,12,234,8,245,9,255,23,274,46,290,75,304,71,307,44,295,19,278,4,257,3,244,7,231,32,195,65,166,102,143,143,126,226,104,301,96"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="504,232,563,260"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="401,101,459,119,487,134,512,155,528,185,535,218,530,215,523,187,508,158,484,139,457,124,401,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="573,157,649,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="396,107,560,154,555,155,396,112"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="283,232,341,260"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="348,107,322,218,317,216,344,111"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="365,232,427,260"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="355,107,390,218,385,217,352,111"/>
+<area shape="rect" id="Node000008" href="$bitops_8hpp.html" title=" " alt="" coords="22,232,128,260"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="296,106,230,126,193,141,159,159,123,189,95,221,91,218,119,185,156,154,191,136,228,121,300,103"/>
+<area shape="rect" id="Node000009" href="$position_8hpp.html" title=" " alt="" coords="170,157,287,184"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="326,111,264,151,261,146,330,108"/>
+<area shape="rect" id="Node000011" href="$rng_8hpp.html" title=" " alt="" coords="412,157,498,184"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="369,107,427,148,421,148,368,112"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="84,258,107,295,102,295,82,263"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="222,184,141,297,137,293,216,185"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="244,182,289,222,283,222,243,187"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="259,182,355,225,350,227,258,188"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="199,187,117,228,114,223,203,183"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="203,232,259,260"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="230,183,232,218,227,216,227,187"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="458,183,459,222,453,244,441,262,421,275,393,287,320,304,239,315,168,321,168,315,238,309,319,298,391,282,419,271,437,258,448,241,453,222,455,187"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="470,182,511,222,506,221,468,187"/>
+</map>

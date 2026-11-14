@@ -1,0 +1,16 @@
+<map id="settings.hpp" name="settings.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="181,5,282,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,72,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,36,87,78,85,73,198,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,81,160,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,35,160,74,157,70,215,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="311,157,376,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,32,220,70,220,89,226,107,240,124,258,138,299,158,294,158,255,142,236,128,222,110,215,90,214,69,224,36"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="236,81,294,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="239,31,256,67,250,66,237,36"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="318,81,380,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="253,31,319,72,313,73,252,36"/>
+<area shape="rect" id="Node000007" href="$constants_8hpp.html" title=" " alt="" coords="404,81,574,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="278,31,431,75,426,77,278,36"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="466,109,384,152,382,147,461,110"/>
+</map>

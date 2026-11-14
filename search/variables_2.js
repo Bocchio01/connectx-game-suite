@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['b_0',['b',['../structai_1_1PairResult.html#aede1667ceb930a848358fc9b2fd9c2d1',1,'ai::PairResult']]],
+  ['b_5fseconds_5fper_5fmove_1',['b_seconds_per_move',['../structai_1_1PairResult.html#aa6de4ce09a58a104cdc80835ff7e6fbe',1,'ai::PairResult']]],
+  ['b_5fwins_2',['b_wins',['../structai_1_1PairResult.html#a226ac0257b8bd43184f8102b1b43e88b',1,'ai::PairResult']]],
+  ['b_5fwins_5fas_5ffirst_3',['b_wins_as_first',['../structai_1_1PairResult.html#add6b11fb125a7e6aece7688af696160d',1,'ai::PairResult']]],
+  ['batch_5fsize_4',['batch_size',['../structai_1_1training_1_1SupervisedOptions.html#ad3f8b405b0b4f9e7ea1bc239020eaae5',1,'ai::training::SupervisedOptions::batch_size'],['../structai_1_1training_1_1SelfPlayOptions.html#a5fcc5a4b5e882574d4b50a5de91b66f4',1,'ai::training::SelfPlayOptions::batch_size']]],
+  ['best_5fepoch_5',['best_epoch',['../structai_1_1training_1_1SupervisedReport.html#af947d901cf55577afedd3f921ff8027f',1,'ai::training::SupervisedReport']]],
+  ['best_5fvalidation_6',['best_validation',['../structai_1_1training_1_1SupervisedReport.html#acfa3e0abe793f4ea9e4de19976daf68f',1,'ai::training::SupervisedReport']]],
+  ['bind_5faddress_7',['bind_address',['../structgateway_1_1Settings.html#a0694623ed0a7fb8fdacdc2a21d292d74',1,'gateway::Settings']]],
+  ['blue_8',['BLUE',['../namespaceColor.html#a4466ae76c7e27e16fcfdf345fd6efc62',1,'Color']]],
+  ['board_9',['board',['../structGameStateUpdate.html#ad0d9fc1ce4fa3000a233f8cbe6e2e6a1',1,'GameStateUpdate']]],
+  ['board_5fcols_10',['board_cols',['../structnn_1_1NetworkConfig.html#ab84487910cf524915555009d015a14f7',1,'nn::NetworkConfig']]],
+  ['board_5fmask_11',['board_mask',['../structai_1_1Geometry.html#a10de289a555ba9cc9b34d43cd42a42da',1,'ai::Geometry']]],
+  ['board_5frows_12',['board_rows',['../structnn_1_1NetworkConfig.html#a75ff4ac115b836e7a72cddfa17471524',1,'nn::NetworkConfig']]],
+  ['bottom_5fcell_13',['bottom_cell',['../structai_1_1Geometry.html#a8061215362314c248cb22a80e086331e',1,'ai::Geometry']]],
+  ['bottom_5fmask_14',['bottom_mask',['../structai_1_1Geometry.html#a6bc83ac1dd0af723a8ebc24717055a1e',1,'ai::Geometry']]],
+  ['bright_5fblue_15',['BRIGHT_BLUE',['../namespaceColor.html#af058b7329f25eba1885a4ac72e4920a9',1,'Color']]],
+  ['bright_5fgreen_16',['BRIGHT_GREEN',['../namespaceColor.html#a6e32ba6ced3076b5cc88ec288a7282ee',1,'Color']]],
+  ['bright_5fred_17',['BRIGHT_RED',['../namespaceColor.html#a92d4632afaf75c06226513d40c46e0c1',1,'Color']]],
+  ['bright_5fyellow_18',['BRIGHT_YELLOW',['../namespaceColor.html#a76de2e5532d3282c87dec82765d74517',1,'Color']]],
+  ['buffer_5fcapacity_19',['buffer_capacity',['../structai_1_1training_1_1SelfPlayOptions.html#a5142b79e5dbd8b2f143efbeb6a469646',1,'ai::training::SelfPlayOptions']]]
+];

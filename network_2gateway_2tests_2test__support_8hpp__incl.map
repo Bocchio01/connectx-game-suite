@@ -1,0 +1,13 @@
+<map id="test_support.hpp" name="test_support.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="158,5,288,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,71,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,36,86,78,84,73,189,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,81,160,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,33,158,74,155,69,204,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="184,81,263,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,32,226,67,221,64,221,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="288,81,362,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,31,297,72,292,72,241,36"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="386,81,444,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="258,31,374,76,369,77,257,36"/>
+</map>

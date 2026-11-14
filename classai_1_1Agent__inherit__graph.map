@@ -1,0 +1,21 @@
+<map id="ai::Agent" name="ai::Agent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,213,85,241"/>
+<area shape="rect" id="Node000002" href="$classai_1_1AlphaBetaAgent.html" title=" " alt="" coords="143,5,289,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,198,60,163,76,122,100,80,131,44,153,31,150,36,134,48,104,83,81,124,65,165,55,199"/>
+<area shape="rect" id="Node000003" href="$classai_1_1AlphaZeroAgent.html" title=" " alt="" coords="143,57,289,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,198,85,146,106,119,131,96,156,83,153,88,134,100,110,123,90,149,61,200"/>
+<area shape="rect" id="Node000004" href="$classai_1_1GreedyAgent.html" title=" " alt="" coords="153,109,279,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="66,201,96,173,131,148,161,136,158,140,134,152,99,177,71,204"/>
+<area shape="rect" id="Node000005" href="$classai_1_1MctsAgent.html" title=" " alt="" coords="161,161,271,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="98,209,169,188,166,192,101,213"/>
+<area shape="rect" id="Node000006" href="$classai_1_1MinimaxAgent.html" title=" " alt="" coords="148,213,284,241"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="99,225,149,225,145,229,101,230"/>
+<area shape="rect" id="Node000007" href="$classai_1_1NeuralAgent.html" title=" " alt="" coords="155,265,277,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="99,241,170,263,165,266,100,246"/>
+<area shape="rect" id="Node000008" href="$classai_1_1NeuralSearchAgent.html" title=" " alt="" coords="133,317,299,345"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="68,249,99,277,134,302,162,316,157,317,131,307,96,281,69,255"/>
+<area shape="rect" id="Node000009" href="$classai_1_1RandomAgent.html" title=" " alt="" coords="149,369,282,397"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="59,253,90,305,110,332,134,354,157,368,152,369,131,359,106,335,85,308,58,258"/>
+<area shape="rect" id="Node000010" href="$classai_1_1SolverAgent.html" title=" " alt="" coords="156,421,276,449"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="53,253,65,290,81,331,104,371,134,406,158,422,152,422,131,411,100,374,76,333,60,291,52,258"/>
+</map>

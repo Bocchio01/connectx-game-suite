@@ -1,0 +1,27 @@
+var classScriptedPlayer =
+[
+    [ "Strategy", "classScriptedPlayer.html#ab00e5915b40b04dd725171b3176eb336", null ],
+    [ "ScriptedPlayer", "classScriptedPlayer.html#a15f497d5b53b6bd56387991f0feac84c", null ],
+    [ "connectTo", "classScriptedPlayer.html#a5c0359498f8ada8c4f0e5b87e7742560", null ],
+    [ "createAndJoin", "classScriptedPlayer.html#adad80a36f37d57eb577a0e1d9d5c2833", null ],
+    [ "firstEvent", "classScriptedPlayer.html#a167837a230b5b28fecf5f49d01acf52b", null ],
+    [ "join", "classScriptedPlayer.html#afdd3f39c320560cbc5ba6cc6d650ca11", null ],
+    [ "list", "classScriptedPlayer.html#ac2ee3b52009f2571fdd5e7016cdbe515", null ],
+    [ "waitForStates", "classScriptedPlayer.html#aaa1a396b0cfac8cbd9f7601d023a7165", null ],
+    [ "waitUntilFinished", "classScriptedPlayer.html#a3e3a43d738e420c9f60e63b1d40353d5", null ],
+    [ "controller", "classScriptedPlayer.html#a529ffb5979706b24e1a3d5f0db7b7df0", null ],
+    [ "disconnectReason", "classScriptedPlayer.html#a7b12430e62b0251f4988035eaa07f091", null ],
+    [ "events", "classScriptedPlayer.html#a01f34f4afd87a9bb2ae80995916377c0", null ],
+    [ "failures", "classScriptedPlayer.html#a5fd142c8543a13dbc296e92c85e85500", null ],
+    [ "game", "classScriptedPlayer.html#af044abb0401cdf0e58f69d7cc51a14c1", null ],
+    [ "lastList", "classScriptedPlayer.html#a46a75326f5088982aae2ea0b126229f5", null ],
+    [ "listCount", "classScriptedPlayer.html#ab01dfc5bb1dbaf5a1e73d72c47bb816d", null ],
+    [ "moveErrors", "classScriptedPlayer.html#af2acf29621e56018d58aa5549da21d3c", null ],
+    [ "name", "classScriptedPlayer.html#a3ffedad4c4e492cf382afa9dbf317bf6", null ],
+    [ "playerId", "classScriptedPlayer.html#aef700543b396f0a191b5a7d8dc40858c", null ],
+    [ "refreshFailures", "classScriptedPlayer.html#ab46157889c13b6d50d6df66b941ae5d3", null ],
+    [ "serverErrorCodes", "classScriptedPlayer.html#a0f2c5c5b1656ebe3af20773042754ff9", null ],
+    [ "serverErrors", "classScriptedPlayer.html#a146308c0c0ad5c3739f3a7e3d4c07768", null ],
+    [ "states", "classScriptedPlayer.html#a2923f1a80e2dc9921f6adc7cdb46e470", null ],
+    [ "strategy", "classScriptedPlayer.html#ade8e3902eaff7dbbfd36a09aafad5deb", null ]
+];

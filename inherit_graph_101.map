@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,109,83,137"/>
+<area shape="rect" id="Node000001" href="$classBoardWidget.html" title=" " alt="" coords="162,5,268,33"/>
+<area shape="poly" id="edge29_Node000000_Node000001" title=" " alt="" coords="66,96,94,69,129,44,164,30,160,34,132,48,98,73,70,100"/>
+<area shape="rect" id="Node000002" href="$classConnectPage.html" title=" " alt="" coords="162,57,268,85"/>
+<area shape="poly" id="edge30_Node000000_Node000002" title=" " alt="" coords="96,105,169,84,165,88,98,110"/>
+<area shape="rect" id="Node000003" href="$classGamePage.html" title=" " alt="" coords="169,109,260,137"/>
+<area shape="poly" id="edge31_Node000000_Node000003" title=" " alt="" coords="97,121,171,121,167,125,99,126"/>
+<area shape="rect" id="Node000004" href="$classGamePage_1_1PlayerRow.html" title=" " alt="" coords="131,161,299,189"/>
+<area shape="poly" id="edge32_Node000000_Node000004" title=" " alt="" coords="97,137,169,159,165,162,97,142"/>
+<area shape="rect" id="Node000005" href="$classLobbyPage.html" title=" " alt="" coords="169,213,260,241"/>
+<area shape="poly" id="edge33_Node000000_Node000005" title=" " alt="" coords="68,146,98,173,132,198,171,216,166,217,129,203,94,178,67,151"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="solver.hpp" name="solver.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="193,5,282,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="22,157,77,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,35,162,56,121,83,91,114,67,145,63,142,87,110,117,79,160,51,205,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="324,81,389,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,31,325,72,320,73,259,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="82,232,148,260"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,32,146,49,93,74,68,90,45,110,26,132,12,158,8,171,12,183,23,198,37,210,70,229,66,232,34,214,19,201,7,186,3,171,7,156,22,129,42,106,65,86,90,69,144,44,195,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="412,81,471,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="274,31,400,77,395,79,274,36"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="364,157,426,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="247,31,277,67,314,107,365,148,359,148,310,111,273,70,246,36"/>
+<area shape="rect" id="Node000007" href="$position_8hpp.html" title=" " alt="" coords="131,81,248,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="231,32,208,70,204,66,227,36"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="163,111,89,151,86,147,166,107"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="179,107,161,132,144,158,131,188,123,219,118,216,126,186,139,155,157,129,175,111"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="227,107,351,152,346,154,226,112"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="282,157,340,184"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="212,107,279,148,274,149,211,112"/>
+<area shape="rect" id="Node000009" href="$bitops_8hpp.html" title=" " alt="" coords="153,157,258,184"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="194,107,202,142,197,141,191,112"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="192,184,144,225,141,220,187,186"/>
+</map>

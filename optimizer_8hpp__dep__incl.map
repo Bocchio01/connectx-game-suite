@@ -1,0 +1,19 @@
+<map id="optimizer.hpp" name="optimizer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="201,5,311,33"/>
+<area shape="rect" id="Node000002" href="$optimizer_8cpp.html" title=" " alt="" coords="61,81,170,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,42,142,83,139,78,219,39"/>
+<area shape="rect" id="Node000003" href="$test__basics_8cpp.html" title=" " alt="" coords="195,81,316,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,47,258,82,253,79,254,51"/>
+<area shape="rect" id="Node000004" href="$trainer_8hpp.html" title=" " alt="" coords="341,81,432,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,38,366,80,361,81,292,44"/>
+<area shape="rect" id="Node000005" href="$selfplay_8cpp.html" title=" " alt="" coords="5,157,104,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="326,112,105,161,103,156,325,107"/>
+<area shape="rect" id="Node000006" href="$test__arduino__board_8cpp.html" title=" " alt="" coords="128,157,301,184"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="344,115,246,159,244,154,339,116"/>
+<area shape="rect" id="Node000007" href="$test__neural_8cpp.html" title=" " alt="" coords="326,157,447,184"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="388,123,389,158,384,155,385,126"/>
+<area shape="rect" id="Node000008" href="$train__main_8cpp.html" title=" " alt="" coords="471,157,590,184"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="426,114,508,156,502,156,425,119"/>
+<area shape="rect" id="Node000009" href="$trainer_8cpp.html" title=" " alt="" coords="613,157,704,184"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="447,110,616,157,610,157,447,115"/>
+</map>

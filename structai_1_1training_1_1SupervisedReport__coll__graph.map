@@ -1,0 +1,5 @@
+<map id="ai::training::SupervisedReport" name="ai::training::SupervisedReport">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,106,177,151"/>
+<area shape="rect" id="Node000002" href="$structai_1_1training_1_1EvalStats.html" title=" " alt="" coords="11,5,171,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,47,94,106,88,105,89,50"/>
+</map>

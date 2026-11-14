@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['web_20client_0',['The protocol, for the people who write a web client',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md3',1,'']]],
+  ['web_20gateway_1',['ConnectX web gateway',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md0',1,'']]],
+  ['web_20page_2',['Playing from a web page',['../index.html#autotoc_md79',1,'']]],
+  ['what_20happens_20when_20qt_20is_20missing_3',['What happens when Qt is missing',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md14',1,'']]],
+  ['what_20small_20experiments_20said_4',['What small experiments said',['../dir_eb8cc02461988d7ac71e6ab0aa3c7205.html#autotoc_md67',1,'']]],
+  ['what_20the_20conversion_20does_20and_20why_20the_20int8_20model_20is_20smaller_20and_20faster_5',['What the conversion does (and why the int8 model is smaller &lt;em&gt;and&lt;/em&gt; faster)',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md53',1,'']]],
+  ['what_20the_20gateway_20does_20to_20the_20messages_6',['What the gateway does to the messages',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md5',1,'']]],
+  ['what_20you_20need_7',['What you need',['../dir_601ffa25d91f7bc4cf4f589836d278b8.html#autotoc_md36',1,'']]],
+  ['when_20qt_20is_20missing_8',['What happens when Qt is missing',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md14',1,'']]],
+  ['where_20the_20helper_20programs_20are_20looked_20for_9',['Where the helper programs are looked for',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md25',1,'']]],
+  ['which_20games_20the_20computer_20can_20play_10',['Which games the computer can play',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md24',1,'']]],
+  ['who_20write_20a_20web_20client_11',['The protocol, for the people who write a web client',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md3',1,'']]],
+  ['why_20the_20int8_20model_20is_20smaller_20and_20faster_12',['What the conversion does (and why the int8 model is smaller &lt;em&gt;and&lt;/em&gt; faster)',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md53',1,'']]],
+  ['windows_3a_20qt_20libraries_13',['Running on Windows: Qt libraries',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md16',1,'']]],
+  ['with_20cmake_20command_20line_14',['With CMake (command line)',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md13',1,'']]],
+  ['with_20keras_20instead_20of_20c_15',['Training with Keras instead of C++',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md55',1,'']]],
+  ['with_20qt_20creator_16',['With Qt Creator',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md15',1,'']]],
+  ['work_17',['How the pieces work',['../dir_eb8cc02461988d7ac71e6ab0aa3c7205.html#autotoc_md60',1,'']]],
+  ['workflow_18',['Workflow',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md52',1,'']]],
+  ['works_19',['How it works',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md22',1,'']]],
+  ['write_20a_20web_20client_20',['The protocol, for the people who write a web client',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md3',1,'']]],
+  ['written_20from_20scratch_21',['nn: a neural network library written from scratch',['../dir_d88567e689052d304a6dad25cf8d7415.html#autotoc_md43',1,'']]]
+];

@@ -1,0 +1,31 @@
+<map id="encoding.hpp" name="encoding.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="465,5,573,33"/>
+<area shape="rect" id="Node000002" href="$alphazero_8cpp.html" title=" " alt="" coords="5,81,118,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="449,34,137,84,119,86,117,82,136,78,450,29"/>
+<area shape="rect" id="Node000003" href="$dataset_8hpp.html" title=" " alt="" coords="318,81,416,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="480,39,395,83,393,78,476,41"/>
+<area shape="rect" id="Node000005" href="$train__main_8cpp.html" title=" " alt="" coords="96,232,214,260"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="447,29,384,44,310,68,274,84,240,105,209,129,182,158,172,177,165,197,158,234,153,231,159,195,167,174,178,155,205,125,237,100,272,80,308,63,382,39,451,27"/>
+<area shape="rect" id="Node000008" href="$test__arduino__board_8cpp.html" title=" " alt="" coords="475,232,648,260"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="518,47,517,112,521,148,528,184,539,209,554,233,549,231,535,212,523,185,515,149,512,112,514,51"/>
+<area shape="rect" id="Node000009" href="$test__neural_8cpp.html" title=" " alt="" coords="673,232,794,260"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="532,45,550,76,572,107,608,145,647,179,716,232,711,231,644,184,604,149,567,110,545,79,530,50"/>
+<area shape="rect" id="Node000011" href="$encoding_8cpp.html" title=" " alt="" coords="581,81,688,109"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="553,39,617,81,612,80,552,44"/>
+<area shape="rect" id="Node000012" href="$neural__agent_8cpp.html" title=" " alt="" coords="712,81,846,109"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="580,35,735,80,730,81,580,40"/>
+<area shape="rect" id="Node000013" href="$neural__search__agent_8cpp.html" title=" " alt="" coords="870,81,1053,109"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="588,29,884,80,879,81,588,35"/>
+<area shape="rect" id="Node000004" href="$dataset_8cpp.html" title=" " alt="" coords="193,157,290,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="334,116,265,159,262,154,329,118"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="355,121,334,156,304,186,256,215,207,234,205,229,254,210,301,182,330,153,351,124"/>
+<area shape="rect" id="Node000006" href="$trainer_8hpp.html" title=" " alt="" coords="365,157,456,184"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="384,120,406,157,400,155,381,125"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="353,189,201,234,200,229,348,189"/>
+<area shape="rect" id="Node000007" href="$selfplay_8cpp.html" title=" " alt="" coords="352,232,451,260"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="409,198,405,234,401,230,405,202"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="452,189,537,232,532,232,451,194"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="472,183,678,231,673,232,472,188"/>
+<area shape="rect" id="Node000010" href="$trainer_8cpp.html" title=" " alt="" coords="238,232,328,260"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="378,192,307,234,305,229,372,193"/>
+</map>

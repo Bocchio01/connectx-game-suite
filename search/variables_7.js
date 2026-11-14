@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['game_0',['game',['../classTestSupport_1_1ScriptedPlayer.html#af044abb0401cdf0e58f69d7cc51a14c1',1,'TestSupport::ScriptedPlayer::game'],['../classScriptedPlayer.html#af044abb0401cdf0e58f69d7cc51a14c1',1,'ScriptedPlayer::game']]],
+  ['game_5falready_5fover_1',['GAME_ALREADY_OVER',['../namespaceProtocol_1_1ErrorCode.html#a766f7a6845c3550e42f92564fff96843',1,'Protocol::ErrorCode']]],
+  ['game_5falready_5fstarted_2',['GAME_ALREADY_STARTED',['../namespaceProtocol_1_1ErrorCode.html#a14313c2684c28087ea9200b6ee126759',1,'Protocol::ErrorCode']]],
+  ['game_5fconfig_3',['game_config',['../structai_1_1BotOptions.html#ac4b0cc05e4e52dfb172a7eb33df76e79',1,'ai::BotOptions']]],
+  ['game_5ffull_4',['GAME_FULL',['../namespaceProtocol_1_1ErrorCode.html#acc7f69b26fdb942a13938a9dbf933007',1,'Protocol::ErrorCode']]],
+  ['game_5fid_5',['game_id',['../structGameStateUpdate.html#ad180284a4f1e2bb797b838ae81c6eba2',1,'GameStateUpdate::game_id'],['../structGameOverMessage.html#ae7798e06aa82c69b640e2d07382b866f',1,'GameOverMessage::game_id'],['../structGameInfo.html#a5b3b415f4bf63ff575f16dbf8dac14ad',1,'GameInfo::game_id'],['../structJoinGameRequest.html#a73632e271f9f708cc66acbd121a354ec',1,'JoinGameRequest::game_id'],['../structClientSession.html#ad5c61f6e9ad7806600526e65dfbb658d',1,'ClientSession::game_id'],['../structai_1_1BotOptions.html#a1dbcd2d93fc95c9f70fd13740957ade6',1,'ai::BotOptions::game_id']]],
+  ['game_5finfo_6',['game_info',['../structCreateGameResponse.html#a45e1ddcb8dbc435145aef0131bddeb50',1,'CreateGameResponse::game_info'],['../structJoinGameResponse.html#af1feecc95c7e1d3cb732da19a37c366e',1,'JoinGameResponse::game_info']]],
+  ['game_5fname_7',['game_name',['../structGameInfo.html#a5f56dad2fcbe1b3b1294758ad7c2b04b',1,'GameInfo::game_name'],['../structCreateGameRequest.html#a745d3ce035f58a736c43fa546ea5052a',1,'CreateGameRequest::game_name'],['../structai_1_1BotOptions.html#ad09f1f83bfc10cd0bd39845bacfb7899',1,'ai::BotOptions::game_name']]],
+  ['game_5fnot_5ffound_8',['GAME_NOT_FOUND',['../namespaceProtocol_1_1ErrorCode.html#a0b5eac90a7253bfd2b84c7bb6f35d5ec',1,'Protocol::ErrorCode']]],
+  ['game_5fnot_5fstarted_9',['GAME_NOT_STARTED',['../namespaceProtocol_1_1ErrorCode.html#a32603d1c1c5cb9090e04c1ca77d43a18',1,'Protocol::ErrorCode']]],
+  ['game_5fserver_10',['game_server',['../network_2server_2app_2main_8cpp.html#a215fc417e232aab87173242609aa80a7',1,'main.cpp']]],
+  ['gameid_11',['gameId',['../structComputerPlayer_1_1Options.html#a601c18fe12bbc3c06271cae9fd4c10e9',1,'ComputerPlayer::Options']]],
+  ['games_12',['games',['../structListGamesResponse.html#a28bccbdac1499901a06bfdc233bf196f',1,'ListGamesResponse::games'],['../structai_1_1ArenaOptions.html#a494ee15527c24f4a500a5cc5cde09eb7',1,'ai::ArenaOptions::games'],['../structai_1_1BotOptions.html#acb88d45cdf560f4f49b8dc30e6bece6a',1,'ai::BotOptions::games']]],
+  ['games_5fper_5fiteration_13',['games_per_iteration',['../structai_1_1training_1_1SelfPlayOptions.html#a0d7067c6b07edfb51e435e8c25894042',1,'ai::training::SelfPlayOptions']]],
+  ['going_5faway_14',['GOING_AWAY',['../namespacewebsocket_1_1CloseCode.html#a2a64028d92bb40edd6c692ef1e696857',1,'websocket::CloseCode']]],
+  ['grad_15',['grad',['../structnn_1_1Parameter.html#a3435721d33a31277f81f883a87a409a1',1,'nn::Parameter']]],
+  ['gradient_5fnorm_16',['gradient_norm',['../structai_1_1training_1_1LossStats.html#a7e97ddac022ccc89bbafa7178d8105d6',1,'ai::training::LossStats']]],
+  ['green_17',['GREEN',['../namespaceColor.html#a7da6e705f05169455fa4b4c28e72b41b',1,'Color']]]
+];

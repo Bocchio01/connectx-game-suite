@@ -1,0 +1,15 @@
+<map id="gatekeeper.hpp" name="gatekeeper.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,334,33"/>
+<area shape="rect" id="Node000002" href="$gatekeeper_8cpp.html" title=" " alt="" coords="5,81,126,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,41,104,83,102,78,223,36"/>
+<area shape="rect" id="Node000003" href="$session_8hpp.html" title=" " alt="" coords="150,81,248,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,43,214,83,210,78,247,46"/>
+<area shape="rect" id="Node000006" href="$test__gatekeeper_8cpp.html" title=" " alt="" coords="272,81,424,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="299,42,338,81,332,80,297,47"/>
+<area shape="rect" id="Node000007" href="$test__gateway_8cpp.html" title=" " alt="" coords="449,81,583,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="332,35,475,80,470,81,331,41"/>
+<area shape="rect" id="Node000004" href="$gateway_8cpp.html" title=" " alt="" coords="85,157,187,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="180,120,149,158,146,154,175,122"/>
+<area shape="rect" id="Node000005" href="$session_8cpp.html" title=" " alt="" coords="212,157,309,184"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="221,118,252,157,247,156,218,123"/>
+</map>

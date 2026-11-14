@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['magenta_0',['MAGENTA',['../namespaceColor.html#aa6279acd2fcc0747a0ce557f139502de',1,'Color']]],
+  ['mask_1',['mask',['../structai_1_1training_1_1LabeledPosition.html#a8e075f9030a35f9bee9a9faca8eacd84',1,'ai::training::LabeledPosition::mask'],['../structai_1_1training_1_1Example.html#a373e4a12e5c4fa7a78ec95db452c0828',1,'ai::training::Example::mask']]],
+  ['max_5fboard_5fsize_2',['MAX_BOARD_SIZE',['../namespaceProtocol.html#a3a2bb9a771140cc0141a6548943c1501',1,'Protocol']]],
+  ['max_5fcomputers_3',['max_computers',['../structgateway_1_1Settings.html#a0f3e21f017bb7ebef631829602a2df8e',1,'gateway::Settings']]],
+  ['max_5fconnections_4',['max_connections',['../structgateway_1_1Settings.html#a755d84b741fffa8ee30182cce8fbd971',1,'gateway::Settings']]],
+  ['max_5fconnections_5fper_5faddress_5',['max_connections_per_address',['../structgateway_1_1Settings.html#a4675e00d6a60d79445677478e99f4b36',1,'gateway::Settings']]],
+  ['max_5fencoded_5fsize_6',['MAX_ENCODED_SIZE',['../namespaceconnectx.html#ab92073bba8d5444182c8b2ed6364144c',1,'connectx']]],
+  ['max_5fgradient_5fnorm_7',['max_gradient_norm',['../structai_1_1training_1_1BatchTrainer_1_1Settings.html#a2444d75205c62a6a8339cad33219358b',1,'ai::training::BatchTrainer::Settings::max_gradient_norm'],['../structai_1_1training_1_1SupervisedOptions.html#a07697fef6b55d8e6e6a407b7e07e8c9f',1,'ai::training::SupervisedOptions::max_gradient_norm'],['../structai_1_1training_1_1SelfPlayOptions.html#aa770c08d1be3ca357eb6d2b1ef6f3a22',1,'ai::training::SelfPlayOptions::max_gradient_norm']]],
+  ['max_5fmessage_5fsize_8',['MAX_MESSAGE_SIZE',['../namespacewebsocket.html#a716d24354b211e95c666eb829b863b4d',1,'websocket::MAX_MESSAGE_SIZE'],['../namespaceProtocol.html#a2fb6403f8cb19675549328d1ca8e83ac',1,'Protocol::MAX_MESSAGE_SIZE']]],
+  ['max_5fplayer_5fname_5flength_9',['MAX_PLAYER_NAME_LENGTH',['../namespaceProtocol.html#aaf9f5a2c1a80e174a87855d2b90a166b',1,'Protocol']]],
+  ['max_5fplayers_10',['MAX_PLAYERS',['../namespaceProtocol.html#adb21ac77c49d6f7604f4dab406a05a2d',1,'Protocol']]],
+  ['max_5frooms_11',['max_rooms',['../structgateway_1_1Settings.html#a4c6b8d159d6d1e0833b3c1dcb69c9fbc',1,'gateway::Settings']]],
+  ['message_12',['message',['../structConnectResponse.html#abb8579f59196dc800e1a331a0c043d00',1,'ConnectResponse::message'],['../structMoveResult.html#ad56cc35786c65dcb9f4f9db9926101fb',1,'MoveResult::message'],['../structGameOverMessage.html#a73f3381341603890fb86fb5481dcdf04',1,'GameOverMessage::message'],['../structCreateGameResponse.html#a83eaf9f57dd3c1269273f49cf72f006e',1,'CreateGameResponse::message'],['../structJoinGameResponse.html#afe263da3692e47c08cc95652fa600597',1,'JoinGameResponse::message']]],
+  ['message_5ftoo_5fbig_13',['MESSAGE_TOO_BIG',['../namespacewebsocket_1_1CloseCode.html#add4eef70c358e34dd7d45b769aca7434',1,'websocket::CloseCode']]],
+  ['metadata_14',['metadata',['../structai_1_1training_1_1SupervisedOptions.html#a0985eac563ba1c0809fc39e80b1126db',1,'ai::training::SupervisedOptions::metadata'],['../structai_1_1training_1_1SelfPlayOptions.html#a2bbfc1214df7247ded32e6a6afffb343',1,'ai::training::SelfPlayOptions::metadata']]],
+  ['method_15',['method',['../structwebsocket_1_1HandshakeRequest.html#a46de37fb19241a68c2f2eb9b4dda1cdb',1,'websocket::HandshakeRequest']]],
+  ['min_5fboard_5fsize_16',['MIN_BOARD_SIZE',['../namespaceProtocol.html#a2db0248e86f8c9d2c974371931533ece',1,'Protocol']]],
+  ['min_5fmove_5fms_17',['min_move_ms',['../structai_1_1BotOptions.html#a80056bf0fdd3cf120c1a1a34fed92831',1,'ai::BotOptions']]],
+  ['min_5fstones_18',['min_stones',['../structai_1_1training_1_1GenerateOptions.html#af1546dd25d7336c0acc1f7d6ca5d4d87',1,'ai::training::GenerateOptions']]],
+  ['mirror_19',['mirror',['../structai_1_1NeuralAgent_1_1Options.html#a0a11e5f71e10cff14168deb3bac8d82e',1,'ai::NeuralAgent::Options']]],
+  ['move_5forder_20',['move_order',['../structai_1_1Geometry.html#a6453d97c8aa7012fbad37caea23256c8',1,'ai::Geometry']]],
+  ['moveerrors_21',['moveErrors',['../classTestSupport_1_1ScriptedPlayer.html#af2acf29621e56018d58aa5549da21d3c',1,'TestSupport::ScriptedPlayer::moveErrors'],['../classScriptedPlayer.html#af2acf29621e56018d58aa5549da21d3c',1,'ScriptedPlayer::moveErrors']]],
+  ['moves_22',['moves',['../structconnectx_1_1Board.html#ac126561635c7436beb1333ef53967273',1,'connectx::Board::moves'],['../structai_1_1GameResult.html#a82855de99d7826e6b8744d447eff15d3',1,'ai::GameResult::moves']]]
+];

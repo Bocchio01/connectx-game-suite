@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['random_5fplies_0',['random_plies',['../structai_1_1ArenaOptions.html#a3956643dcb455e3b99ebfc43bd06831d',1,'ai::ArenaOptions']]],
+  ['randomize_1',['randomize',['../structai_1_1AlphaBetaAgent_1_1Options.html#a21511de90d6768b26c6339e78e809087',1,'ai::AlphaBetaAgent::Options::randomize'],['../structai_1_1NeuralSearchAgent_1_1Options.html#a0dfa7036324032629b44f1d39508adcc',1,'ai::NeuralSearchAgent::Options::randomize']]],
+  ['reason_2',['reason',['../structDisconnectMessage.html#abcd3375ddb73af60207a8768fe92d2b6',1,'DisconnectMessage']]],
+  ['red_3',['RED',['../namespaceColor.html#aa1c9d41fbb5e4b016b274d665708c35a',1,'Color']]],
+  ['refreshfailures_4',['refreshFailures',['../classTestSupport_1_1ScriptedPlayer.html#ab46157889c13b6d50d6df66b941ae5d3',1,'TestSupport::ScriptedPlayer::refreshFailures'],['../classScriptedPlayer.html#ab46157889c13b6d50d6df66b941ae5d3',1,'ScriptedPlayer::refreshFailures']]],
+  ['req_5fadd_5fcomputer_5',['REQ_ADD_COMPUTER',['../namespacegateway_1_1WebMessage.html#a4bc8a43d7f4719e50fd2bf16c868c7d1',1,'gateway::WebMessage']]],
+  ['req_5fcomputer_5flevels_6',['REQ_COMPUTER_LEVELS',['../namespacegateway_1_1WebMessage.html#adbdc1f7a527ff614ed6325b26335c780',1,'gateway::WebMessage']]],
+  ['res_5fadd_5fcomputer_7',['RES_ADD_COMPUTER',['../namespacegateway_1_1WebMessage.html#a84ec3d2bda14968b454405ae0b379f56',1,'gateway::WebMessage']]],
+  ['res_5fcomputer_5flevels_8',['RES_COMPUTER_LEVELS',['../namespacegateway_1_1WebMessage.html#a60f75b5cd19d7e37a6da932119be5e4a',1,'gateway::WebMessage']]],
+  ['reset_9',['RESET',['../namespaceColor.html#a411139f66a01e03e8d26bb3e87e5d9ba',1,'Color']]],
+  ['result_10',['result',['../structai_1_1training_1_1SelfPlayGame.html#ae20ad7c8fbfc07617cf3773e86fb267b',1,'ai::training::SelfPlayGame']]],
+  ['rollout_11',['rollout',['../structai_1_1MctsAgent_1_1Options.html#a7c7739b88bfdee712f51eb7aa52f2e9e',1,'ai::MctsAgent::Options']]],
+  ['room_5fcreated_12',['room_created',['../structgateway_1_1Translation.html#a5b8a8e8a39282cd83df82efafbe2573c',1,'gateway::Translation']]],
+  ['rooms_13',['rooms',['../structgateway_1_1Shared.html#af8ac15d5e44fd3c4e7f70382badbbb19',1,'gateway::Shared']]],
+  ['row_14',['row',['../structGameLogic_1_1Cell.html#ae5897f6053de631538fc20b0194d5158',1,'GameLogic::Cell']]],
+  ['rows_15',['ROWS',['../namespaceconnectx.html#af43b8f86b963658b38174ef392ad48af',1,'connectx']]],
+  ['rows_16',['rows',['../structGameStateUpdate.html#a8a6318c8b7bc2bece32861b902b19de3',1,'GameStateUpdate::rows'],['../structGameConfig.html#a4692e3a64a9599da655a668659432387',1,'GameConfig::rows'],['../structGameSpec.html#a797842b5bbfcc57d05e599224a4bf96f',1,'GameSpec::rows'],['../structai_1_1ArenaOptions.html#a27e012b1c67eec1bc1306289d3c40e54',1,'ai::ArenaOptions::rows'],['../structai_1_1Geometry.html#a79ba4bd7383063558d978c0de6ffc56c',1,'ai::Geometry::rows'],['../structai_1_1training_1_1GenerateOptions.html#a7a7355b6cd745547f97a41f2083c256a',1,'ai::training::GenerateOptions::rows'],['../structai_1_1training_1_1SelfPlayOptions.html#ab51073bb2b4573c0a7254f5e108e9b44',1,'ai::training::SelfPlayOptions::rows']]]
+];

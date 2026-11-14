@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['c_0',['Training with Keras instead of C++',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md55',1,'']]],
+  ['c_20network_20to_20tensorflow_20tensorflow_20lite_20and_20the_20arduino_1',['From the C++ network to TensorFlow, TensorFlow Lite and the Arduino',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md49',1,'']]],
+  ['can_20play_2',['Which games the computer can play',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md24',1,'']]],
+  ['carlo_20tree_20search_20level_205_3',['Monte Carlo tree search (level 5)',['../dir_eb8cc02461988d7ac71e6ab0aa3c7205.html#autotoc_md63',1,'']]],
+  ['checking_4',['Is the backpropagation right? Gradient checking',['../dir_d88567e689052d304a6dad25cf8d7415.html#autotoc_md45',1,'']]],
+  ['client_5',['The protocol, for the people who write a web client',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md3',1,'']]],
+  ['closing_6',['Closing',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md4',1,'']]],
+  ['cmake_20command_20line_7',['With CMake (command line)',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md13',1,'']]],
+  ['code_8',['The code',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md8',1,'']]],
+  ['code_20map_9',['Code map',['../dir_eb8cc02461988d7ac71e6ab0aa3c7205.html#autotoc_md68',1,'']]],
+  ['command_20line_10',['With CMake (command line)',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md13',1,'']]],
+  ['command_20line_20options_11',['Command-line options',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md18',1,'']]],
+  ['computer_12',['computer',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md21',1,'Playing against the computer'],['../index.html#autotoc_md77',1,'Playing against the computer']]],
+  ['computer_20can_20play_13',['Which games the computer can play',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md24',1,'']]],
+  ['computer_20plays_14',['How the computer plays',['../dir_601ffa25d91f7bc4cf4f589836d278b8.html#autotoc_md37',1,'']]],
+  ['connect_204_20against_20a_20neural_20network_20on_20an_20arduino_15',['Playing Connect 4 against a neural network on an Arduino',['../dir_601ffa25d91f7bc4cf4f589836d278b8.html#autotoc_md35',1,'']]],
+  ['connectx_20ai_16',['ConnectX AI',['../dir_eb8cc02461988d7ac71e6ab0aa3c7205.html#autotoc_md56',1,'']]],
+  ['connectx_20game_20suite_17',['ConnectX Game Suite',['../index.html',1,'']]],
+  ['connectx_20gui_18',['ConnectX GUI (`connectx-gui`)',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md9',1,'']]],
+  ['connectx_20gui_20connectx_20gui_19',['ConnectX GUI (`connectx-gui`)',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md9',1,'']]],
+  ['connectx_20web_20gateway_20',['ConnectX web gateway',['../dir_eeb0409418096bdec3ff55b82e8ce78d.html#autotoc_md0',1,'']]],
+  ['contributing_21',['Contributing',['../index.html#autotoc_md82',1,'']]],
+  ['conversion_20does_20and_20why_20the_20int8_20model_20is_20smaller_20and_20faster_22',['What the conversion does (and why the int8 model is smaller &lt;em&gt;and&lt;/em&gt; faster)',['../dir_2f68a0f6787c17506466abffe4c1d7ce.html#autotoc_md53',1,'']]],
+  ['creator_23',['With Qt Creator',['../dir_f8ea612b72f2a5defb4e3ae3762eed8e.html#autotoc_md15',1,'']]],
+  ['cxnn_20model_20file_24',['The &lt;span class=&quot;tt&quot;&gt;.cxnn&lt;/span&gt; model file',['../dir_d88567e689052d304a6dad25cf8d7415.html#autotoc_md48',1,'']]]
+];

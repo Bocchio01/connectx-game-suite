@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['abandon_0',['abandon',['../classNetworkController_1_1Session.html#aafda8dab6809c7797f9e6a338ef81d60',1,'NetworkController::Session']]],
+  ['accept_1',['accept',['../classgateway_1_1WebConnection.html#aa1f32e355b5343a032937ee95db2f309',1,'gateway::WebConnection::accept()'],['../classNewGameDialog.html#a16a498a266d1bdaeb1a19439afb51343',1,'NewGameDialog::accept()']]],
+  ['accepted_2',['accepted',['../classTestSupport_1_1SilentServer.html#ac48b496d6f14365c6220fddca46e1e00',1,'TestSupport::SilentServer::accepted()'],['../classSilentServer.html#ac48b496d6f14365c6220fddca46e1e00',1,'SilentServer::accepted()']]],
+  ['acceptkey_3',['acceptKey',['../namespacewebsocket.html#ae05ab1729134760c7d11b24c8d7d8dc0',1,'websocket']]],
+  ['acceptresponse_4',['acceptResponse',['../namespacewebsocket.html#ae9d4656c9b16998d4f7c3bfeb9780399',1,'websocket']]],
+  ['adam_5',['Adam',['../classnn_1_1Adam.html#afa18e84f7ca179d528acc17992b3e5df',1,'nn::Adam']]],
+  ['add_6',['add',['../classai_1_1training_1_1Dataset.html#a163bf6ce14aabc3ba83050cf5cf41788',1,'ai::training::Dataset::add()'],['../classnn_1_1Sequential.html#ac16c7ef202f2227274964b6fd9556f1d',1,'nn::Sequential::add()']]],
+  ['addmove_7',['addMove',['../classGameState.html#aec06610dc84b037115c3537513b293d3',1,'GameState']]],
+  ['addplayer_8',['addPlayer',['../classGameSession.html#ad51aecedeab80a6f01dbb613ce7e9dc5',1,'GameSession']]],
+  ['address_9',['address',['../classgateway_1_1WebConnection.html#a6402678771330a35ef49a5de46a349bc',1,'gateway::WebConnection']]],
+  ['addrowvector_10',['addRowVector',['../namespacenn.html#a061b9df7cc627ef0391e726cc1fddabf',1,'nn']]],
+  ['agentspec_11',['agentSpec',['../namespaceComputerLevels.html#a11ff1cfdcab8ad80fc244243d2d5b38d',1,'ComputerLevels']]],
+  ['allow_12',['allow',['../classgateway_1_1RateLimiter.html#a65dbc8a27e6ed34d1564adfa9e519c49',1,'gateway::RateLimiter']]],
+  ['alphabetaagent_13',['AlphaBetaAgent',['../classai_1_1AlphaBetaAgent.html#a71d029eb3041bb4a2d377561faad7314',1,'ai::AlphaBetaAgent::AlphaBetaAgent()'],['../classai_1_1AlphaBetaAgent.html#ab6e7dc6ed239c9a398333d6328568419',1,'ai::AlphaBetaAgent::AlphaBetaAgent(const Options &amp;options, uint64_t seed=randomSeed())']]],
+  ['alphazeroagent_14',['AlphaZeroAgent',['../classai_1_1AlphaZeroAgent.html#a913a1155964ba73403f74f7b1eb4b88b',1,'ai::AlphaZeroAgent::AlphaZeroAgent(std::shared_ptr&lt; const nn::PolicyValueNet &gt; network, uint64_t seed=randomSeed())'],['../classai_1_1AlphaZeroAgent.html#a78d63dfeadd0639f0e1f774667c0c593',1,'ai::AlphaZeroAgent::AlphaZeroAgent(std::shared_ptr&lt; const nn::PolicyValueNet &gt; network, const Options &amp;options, uint64_t seed=randomSeed())']]],
+  ['alphazerosearch_15',['AlphaZeroSearch',['../classai_1_1AlphaZeroSearch.html#a98ba5655bc9ea4d3b2d76afe19dc5330',1,'ai::AlphaZeroSearch']]],
+  ['append_16',['append',['../classai_1_1training_1_1Dataset.html#a62bdbcebfeb86ee5e9dce8f627af9b56',1,'ai::training::Dataset']]],
+  ['appicon_17',['appIcon',['../namespaceUiUtils.html#aec8c59ba24b6db02cfcfe18925e2e4d1',1,'UiUtils']]],
+  ['applystate_18',['applyState',['../classGameModel.html#a77418c24b66d18c7ccd7f413881a1fd5',1,'GameModel::applyState()'],['../classGamePage.html#a328f1960e7fbdc36737b0da416ead930',1,'GamePage::applyState()']]],
+  ['arguments_19',['arguments',['../classComputerPlayer.html#abdc027d2af801b72bb57e6fe9ae7414d',1,'ComputerPlayer']]],
+  ['ascore_20',['aScore',['../structai_1_1PairResult.html#a17d3d62815d2a54a6177b235d828bc7a',1,'ai::PairResult']]],
+  ['assigntogame_21',['assignToGame',['../classSessionManager.html#a6b23aa25abc6cafd12fde16744fd0499',1,'SessionManager']]],
+  ['availableagents_22',['availableAgents',['../namespaceai.html#a3623b18a8adb0ba2f261cd34467812ec',1,'ai']]]
+];

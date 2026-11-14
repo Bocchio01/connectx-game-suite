@@ -1,0 +1,11 @@
+<map id="computer.hpp" name="computer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="69,5,179,33"/>
+<area shape="rect" id="Node000002" href="$computer_8cpp.html" title=" " alt="" coords="5,81,115,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,73,82,69,79,104,43"/>
+<area shape="rect" id="Node000003" href="$session_8hpp.html" title=" " alt="" coords="139,81,237,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,42,179,80,174,81,145,48"/>
+<area shape="rect" id="Node000004" href="$gateway_8cpp.html" title=" " alt="" coords="74,157,176,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,120,138,158,135,154,164,122"/>
+<area shape="rect" id="Node000005" href="$session_8cpp.html" title=" " alt="" coords="201,157,298,184"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="210,118,241,157,236,156,207,123"/>
+</map>

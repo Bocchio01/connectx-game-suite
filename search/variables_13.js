@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['table_5fentries_0',['table_entries',['../structai_1_1AlphaBetaAgent_1_1Options.html#a659a708b872e6777effaa24411654ccd',1,'ai::AlphaBetaAgent::Options::table_entries'],['../structai_1_1SolverAgent_1_1Options.html#a3976db22de5c70022c97486b0979cd7c',1,'ai::SolverAgent::Options::table_entries']]],
+  ['tactics_1',['tactics',['../structai_1_1AlphaBetaAgent_1_1Options.html#a56dab1dd112dc2217e329b06e3946f89',1,'ai::AlphaBetaAgent::Options::tactics'],['../structai_1_1NeuralAgent_1_1Options.html#a79be2fee3d8d78f858b9160c71ae518a',1,'ai::NeuralAgent::Options::tactics']]],
+  ['target_2',['target',['../structai_1_1training_1_1SupervisedOptions.html#ab337b394f08b4c0b5ecae545f7aa4994',1,'ai::training::SupervisedOptions']]],
+  ['teacher_3',['teacher',['../structai_1_1training_1_1SelfPlayOptions.html#a8b520d58eba15fc14d0cf6a8791b6387',1,'ai::training::SelfPlayOptions']]],
+  ['teacher_5ffraction_4',['teacher_fraction',['../structai_1_1training_1_1SelfPlayOptions.html#a25a812e2a1871f13ed504aeb8c6e31ab',1,'ai::training::SelfPlayOptions']]],
+  ['teacher_5ftarget_5',['teacher_target',['../structai_1_1training_1_1SelfPlayOptions.html#ac0a82338684fa2a42488703810320981',1,'ai::training::SelfPlayOptions']]],
+  ['temperature_6',['temperature',['../structai_1_1NeuralAgent_1_1Options.html#aa8bea6dffab79076fce6a9490dca983c',1,'ai::NeuralAgent::Options::temperature'],['../structai_1_1AlphaZeroAgent_1_1Options.html#ae9a0f0d7e9df2d5f15020f755f8f5a6c',1,'ai::AlphaZeroAgent::Options::temperature']]],
+  ['temperature_5fplies_7',['temperature_plies',['../structai_1_1training_1_1SelfPlayOptions.html#a397909160aa0e3f3b049d3925ca10c63',1,'ai::training::SelfPlayOptions']]],
+  ['text_8',['text',['../structgateway_1_1Verdict.html#aa77dc617cb74afa1e8fdf5d655359b87',1,'gateway::Verdict']]],
+  ['threads_9',['threads',['../structai_1_1ArenaOptions.html#aebe632f163bcb34ab45e48fe1a3e91ee',1,'ai::ArenaOptions::threads'],['../structai_1_1training_1_1GenerateOptions.html#ad7627adaa427a79ba6244dd2adc82de4',1,'ai::training::GenerateOptions::threads'],['../structai_1_1training_1_1SelfPlayOptions.html#a10d78205390eea1be8a89de7428f753a',1,'ai::training::SelfPlayOptions::threads']]],
+  ['time_5flimit_5fms_10',['time_limit_ms',['../structai_1_1AlphaBetaAgent_1_1Options.html#a9e19e51b3ad8a911a5ddea843c7dfbfb',1,'ai::AlphaBetaAgent::Options::time_limit_ms'],['../structai_1_1MctsAgent_1_1Options.html#a323549cc610ddac3862bd0401ed32481',1,'ai::MctsAgent::Options::time_limit_ms'],['../structai_1_1SolverAgent_1_1Options.html#a4484e59c2f2b96db2d37a97d8bc4310b',1,'ai::SolverAgent::Options::time_limit_ms'],['../structai_1_1AlphaZeroAgent_1_1Options.html#a282cd3417764254ca71299326b197065',1,'ai::AlphaZeroAgent::Options::time_limit_ms']]],
+  ['timestamp_11',['timestamp',['../structHeartbeatMessage.html#a3f2126ca6894865982d0f4e2cfdf8a56',1,'HeartbeatMessage']]],
+  ['to_5fbrowser_12',['to_browser',['../structgateway_1_1Translation.html#ae9392c34d32e1e6ab68326fb2b29daeb',1,'gateway::Translation']]],
+  ['to_5fserver_13',['to_server',['../structgateway_1_1Translation.html#a053ca34068e688755eca9cc0e803101c',1,'gateway::Translation']]],
+  ['too_5fmany_5frooms_14',['TOO_MANY_ROOMS',['../namespacegateway_1_1ErrorCode.html#ac3ebbe15abaa92a506fe3f0b1cee163a',1,'gateway::ErrorCode']]],
+  ['top_5fcell_15',['top_cell',['../structai_1_1Geometry.html#a63da74cf3b5a80faeb1c977310ff9ce2',1,'ai::Geometry']]],
+  ['train_5fsteps_5fper_5fiteration_16',['train_steps_per_iteration',['../structai_1_1training_1_1SelfPlayOptions.html#a2365a781595a025f589cdf7f16ca7135',1,'ai::training::SelfPlayOptions']]],
+  ['try_5fagain_5flater_17',['TRY_AGAIN_LATER',['../namespacewebsocket_1_1CloseCode.html#ad9a293bc9cb6860153ddafe2c06dd2a5',1,'websocket::CloseCode']]],
+  ['type_18',['type',['../structgateway_1_1Verdict.html#ab2c3908bfb3a54d38d01eac9856165c5',1,'gateway::Verdict::type'],['../structwebsocket_1_1Reader_1_1Event.html#a1c09b78c68df7b64cbcc0c2d0d27189c',1,'websocket::Reader::Event::type'],['../structai_1_1AgentSpec.html#a5473132e37d99ab7e5c08cc2518e5852',1,'ai::AgentSpec::type'],['../structai_1_1AgentInfo.html#a86002d7c7e87272e6f0f4801086e61e3',1,'ai::AgentInfo::type']]]
+];

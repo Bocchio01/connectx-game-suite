@@ -1,0 +1,9 @@
+<map id="board.hpp" name="board.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,168,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,68,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,33,65,73,62,69,106,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,81,157,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,32,127,66,122,64,123,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="181,81,255,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,31,192,71,187,72,140,36"/>
+</map>

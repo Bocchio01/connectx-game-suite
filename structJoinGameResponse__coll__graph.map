@@ -1,0 +1,7 @@
+<map id="JoinGameResponse" name="JoinGameResponse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,207,153,234"/>
+<area shape="rect" id="Node000002" href="$structGameInfo.html" title=" " alt="" coords="36,106,122,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,148,82,207,76,205,77,151"/>
+<area shape="rect" id="Node000003" href="$structGameConfig.html" title=" " alt="" coords="28,5,130,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,46,82,106,76,105,78,51"/>
+</map>
